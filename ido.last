@@ -1,0 +1,59 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jtarchalski/learning_C/C/" . "learning_scripts/")
+ ("/home/jtarchalski/learning_C/" . "C/")
+ ("/home/jtarchalski/Downloads/" . "win10_iso/")
+ ("/home/jtarchalski/" . "learning_C/")
+ ("/home/jtarchalski/keebs/dactyl-keyboard/src/" . "dactyl_keyboard/")
+ ("/home/jtarchalski/keebs/dactyl-keyboard/" . "src/")
+ ("/home/jtarchalski/keebs/" . "dactyl-keyboard/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jtarchalski/learning_C/C/learning_scripts/"
+ "/home/jtarchalski/keebs/dactyl-keyboard/src/dactyl_keyboard/"
+ "/home/jtarchalski/keebs/dactyl-keyboard/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "getchar.c"
+ "wc-barebones.c"
+ "bl-replace.c"
+ "tab_blank_new-count.c"
+ "fahr-cel.c"
+ "bkspc_tab_bkslsh-replace.c"
+ "dactyl.clj"
+ "project.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jtarchalski/learning_C/C/learning_scripts/" (23562 37803 736468 254000) "../" "tab_blank_new-count.c" "bl-replace.c" "hello.c" "getchar.c" "cel-fahr.c" "bkspc_tab_bkslsh-replace.c" "./" "wc-barebones.c" "a.out" "charcount.c" "linecount.c" "fahr-cel.c")
+
+ ("/home/jtarchalski/" (23562 35776 213155 932000) "Star Wars Binge.xspf" "emacs-application-framework/" ".viminfo" "Star.Wars.Episode.II.Attack.Of.The.Clones.2002.1080p.Bluray.x264.anoXmous/" "dotfiles/" ".mputils/" ".steam/" ".nvim/" ".m2/" "keebs/" ".mcedit/" ".local/" "network.sh" ".bash_history" ".rtorrent.rc" "magnet" "aur/" ".minecraft/" "PlayOnLinux's virtual drives/" "Videos/" "#.emacs#" ".npm/" "mail/" ".masterpdfeditor/" "better-defaults/" "list" ".fonts.conf" "Star.Wars.Episode.VI.Return.Of.The.Jedi.1983.1080p.Bluray.x264.anoXmous.mkv/" "learning_C/" "utils/" "toolchains/" ".steampath" ".lein/" "../" "asbestOS/" ".emacs.d/" ".ncmpcpp/" ".caches/" ".java/" "backup/" ".nv/" "Desktop/" "Public/" "Templates/" "Ender-3 Pro quick start guide V1.0.pdf" "mnt/" ".Xresources" ".rtorrent.session/" ".android/" "xrandr.txt" ".fehbg" "VirtualBox VMs/" ".mozilla/" "#mkolaj.ltx#" ".rnd" ".npmrc" "nvidia.hook" ".xbindkeysrc" "review_criteria" ".esd_auth" "dead.letter" ".kde4/" ".pine-debug1" ".chatty/" ".bashrc" ".cache/" ".gradle/" "Music/" ".gitconfig" ".gnupg/" "opt/" "prv_mkolaj.log" ".gtkrc-2.0" "Star.Wars.Episode.I.The.Phantom.Menace.1999.1080p.Bluray.x264.anoXmous/" "./" "Pictures/" ".cling_history" ".w3m/" ".ssh/" ".oracle_jre_usage/" "Star.Wars.Episode.V.The.Empire.Strikes.Back.1980-TUSAHD/" "drinking_game" ".plover-lock-MSI-0" ".wget-hsts" ".torrents/" "ps.txt" ".config/" ".bash_profile" ".vim/" "#foo.txt#" ".bash_logout" "soundcardstart.sh" ".pulse-cookie" "Star.Wars.Episode.III.Revenge.Of.The.Sith.2005.1080p.Bluray.x264.anoXmous/" "Star Wars The Clone Wars/" ".technic/" ".mpd/" ".gphoto/" "Star Wars The Clone Wars (2008) [1080p] {5.1}/" "texput.log" "LaTeX/" "Downloads/" ".wine/" "Chatty/" ".Xauthority" ".nvidia-settings-rc" ".steampid" ".pki/" ".emacs" ".addressbook" "temp/" "Documents/" ".pinerc" ".log/" ".asoundrc" "Star.Wars.Episode.IV.A.New.Hope.1977.1080p.Bluray.x264.anoXmous/" "Games/" "wallpaper.png" "listdoswmklj/" ".PlayOnLinux/" ".lyrics/" "1440x1080@144.sh" ".pulse/")
+
+ ("/home/jtarchalski/keebs/dactyl-keyboard/" (23553 45592 513227 100000) ".git/" "resources/" "LICENSE" "guide/" "target/" ".lein-repl-history" "src/" "../" "project.clj" "README.md" "doc/" "4x6.patch" ".gitignore" "./" "reload.sh" "things/" "6x6.patch" "create-models.sh" "tags" "test/" "5x6.patch" "LICENSE-models")
+
+ ("/home/jtarchalski/keebs/dactyl-keyboard/src/dactyl_keyboard/" (23514 7389 859912 11000) "../" "./" "dactyl.clj")
+
+ ("/home/jtarchalski/learning_C/C/" (23495 32191 913316 556000) "learning_scripts/" "../" "./")
+
+ ("/home/jtarchalski/learning_C/" (23498 7616 666603 959000) "C++/" ".git/" "../" "README.md" "./" "C/")
+
+ ("/home/" (23495 32007 700345 792000) "jtarchalski/" "../" "./" "lost+found/")
+
+ ("/home/jtarchalski/Downloads/win10_iso/" (23495 32236 286456 414000) "fonts/" "../" "Win10_1803_EnglishInternational_x64.iso" "./" "install.wim")
+
+ ("/home/jtarchalski/Downloads/" (23539 10221 519823 730000) "kali-linux-2018-W45-amd64.iso" "TechnicLauncher.jar" "SteamSetup.exe" "steam_logo.png" "reference_manual.pdf" "scarlett-mixcontrol-1.8.exe" "jre-8u181-linux-x64.tar.gz" "toolchains/" "kali-linux-2018.3a-amd64.iso.torrent" "../" "setup.exe" "alx-dmks-installer.tar.gz" "gparted-live-0.32.0-1-amd64.iso" "AdbWinUsbApi.dll" "csgo/" "Win10_Edu_1803_EnglishInternational_x64.iso" "etcher/" "gru_plan_template.jpg" "twrp-3.2.3-1-dumpling.img" "win10_iso/" "teacherspet-1.0rc1.tar.gz" "Magisk-v17.1.zip" "reference_manual(1).pdf" "downloadconfigfile.conf" "SLAM_v1.5.4.zip" "ttf/" "SHA256SUMS.gpg" "SHA256SUMS" "./" "hurd-live-install-1273300101.iso" "AGNIESZKA SUROWIAK. - CV (ENGLISH).docx" "BIOS/" "magenta_toolchains.tar.gz" "sweating_black_guy.jpg" "fastboot/" "pro_configs/" "helpdesk.zip" "alx-dmks-installer/" "teacherspet-1.0/" "Hack-v3.003-ttf.zip" "Setup.iss")
+
+ ("/home/jtarchalski/keebs/dactyl-keyboard/src/" (23499 40893 186622 460000) "../" "./" "dactyl_keyboard/")
+
+ ("/home/jtarchalski/keebs/" (23499 40869 109956 50000) "../" "qmk_dactyl-manuform/" "dactyl-keyboard/" "teensy_loader_cli/" "./" "qmk_firmware/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
