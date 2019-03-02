@@ -80,6 +80,27 @@ There are two things you can do about this warning:
 
 
 
+
+; list the packages you want
+(setq package-list '(auctex better-defaults cider clear-text clojure-mode company-c-headers company ecb elcord function-args ggtags helm-gtags helm-projectile helm helm-core async ivy libmpdel matrix-client frame-purpose ht esxml a f dash-functional dash anaphora mingus libmpdee org-plus-contrib ov popup project-explorer es-windows es-lib projectile pkg-info epl quelpa-use-package quelpa queue rainbow-identifiers ranger request s sesman spinner tracking use-package bind-key ws-butler yasnippet-snippets yasnippet))
+
+; list the repositories containing them
+(setq package-archives '(("elpa" . "http://tromey.com/elpa/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")))
+
+; activate all the packages (in particular autoloads)
+(package-initialize)
+
+; fetch the list of packages available 
+(unless package-archive-contents
+  (package-refresh-contents))
+
+; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
+
 ;(load "~/.emacs.d/libmpdee.el")
 ;(load "~/.emacs.d/mingus.el")
 
