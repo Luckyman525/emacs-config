@@ -10,7 +10,7 @@
    '("994508ac1b9cfc317c80dcffb1efb69689e792eab8bc4c1dd0be7a57b77c4706" default "abyss"))
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(ws-butler yasnippet-snippets yasnippet project-explorer function-args ggtags helm-gtags helm ## ecb clear-text mingus elcord quelpa-use-package cider clojure-mode projectile better-defaults))
+   '(ws-butler yasnippet-snippets yasnippet project-explorer function-args helm-gtags helm ## ecb clear-text mingus elcord quelpa-use-package cider clojure-mode projectile better-defaults))
  '(speedbar-default-position 'left)
  '(speedbar-directory-unshown-regexp "^\\(CVS\\|RCS\\|SCCS\\|STAR\\|\\.\\.*$\\)\\'")
  '(speedbar-ignored-directory-expressions
@@ -29,8 +29,8 @@
  )
 
 
-(add-to-list 'load-path "~/.emacs/plugins/")
-(let ((default-directory  "~/.emacs.d/plugins/"))
+(add-to-list 'load-path "/home/jtarchalski/.emacs/plugins/")
+(let ((default-directory  "/home/jtarchalski/.emacs.d/plugins/"))
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
 (concat user-emacs-directory
@@ -91,8 +91,8 @@ There are two things you can do about this warning:
 
 ;;(set-frame-parameter (selected-frame) 'alpha '(<active> . <inactive>))
 ;;(set-frame-parameter (selected-frame) 'alpha <both>)
-(set-frame-parameter (selected-frame) 'alpha '(80 . 80))
-(add-to-list 'default-frame-alist '(alpha . (80 . 80)))
+(set-frame-parameter (selected-frame) 'alpha '(100 . 100))
+(add-to-list 'default-frame-alist '(alpha . (100 . 100)))
 
 (package-initialize)
 (if (require 'quelpa nil t)
@@ -167,7 +167,10 @@ There are two things you can do about this warning:
 (setq-default indent-tabs-mode nil)
 
 ;; set appearance of a tab that is represented by 4 spaces
-(setq-default tab-width 4)
+(setq-default c-default-style "otbs"
+                  c-basic-offset 4
+                  tab-width 4
+                  indent-tabs-mode t)
 
 
 (global-set-key (kbd "<f5>") (lambda ()
