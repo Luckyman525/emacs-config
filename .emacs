@@ -5,9 +5,11 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+ '(c-default-style "bsd")
  '(custom-enabled-themes '(abyss))
  '(custom-safe-themes
    '("994508ac1b9cfc317c80dcffb1efb69689e792eab8bc4c1dd0be7a57b77c4706" default "abyss"))
+ '(doc-view-continuous t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
    '(ws-butler yasnippet-snippets yasnippet project-explorer function-args helm-gtags helm ## ecb clear-text mingus elcord quelpa-use-package cider clojure-mode projectile better-defaults))
@@ -27,6 +29,23 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+
+(defun er-sudo-edit (&optional arg)
+  "Edit currently visited file as root.
+
+With a prefix ARG prompt for a file to visit.
+Will also prompt for a file to visit if current
+buffer is not visiting a file."
+  (interactive "P")
+  (if (or arg (not buffer-file-name))
+      (find-file (concat "/sudo:root@localhost:"
+                         (ido-read-file-name "Find file(as root): ")))
+    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+
+
+(global-set-key (kbd "C-x C-r") #'er-sudo-edit)
 
 
 (add-to-list 'load-path "/home/jtarchalski/.emacs/plugins/")
@@ -78,27 +97,6 @@ There are two things you can do about this warning:
   (unless (package-installed-p p)
     (package-install p)))
 
-
-
-
-; list the packages you want
-(setq package-list '(auctex better-defaults cider clear-text clojure-mode company-c-headers company ecb elcord function-args ggtags helm-gtags helm-projectile helm helm-core async ivy libmpdel matrix-client frame-purpose ht esxml a f dash-functional dash anaphora mingus libmpdee org-plus-contrib ov popup project-explorer es-windows es-lib projectile pkg-info epl quelpa-use-package quelpa queue rainbow-identifiers ranger request s sesman spinner tracking use-package bind-key ws-butler yasnippet-snippets yasnippet))
-
-; list the repositories containing them
-(setq package-archives '(("elpa" . "http://tromey.com/elpa/")
-                         ("gnu" . "http://elpa.gnu.org/packages/")))
-
-; activate all the packages (in particular autoloads)
-(package-initialize)
-
-; fetch the list of packages available 
-(unless package-archive-contents
-  (package-refresh-contents))
-
-; install the missing packages
-(dolist (package package-list)
-  (unless (package-installed-p package)
-    (package-install package)))
 
 
 ;(load "~/.emacs.d/libmpdee.el")
@@ -188,7 +186,7 @@ There are two things you can do about this warning:
 (setq-default indent-tabs-mode nil)
 
 ;; set appearance of a tab that is represented by 4 spaces
-(setq-default c-default-style "otbs"
+(setq-default c-default-style "bsd"
                   c-basic-offset 4
                   tab-width 4
                   indent-tabs-mode t)
