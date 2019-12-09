@@ -1,0 +1,26 @@
+;; Object semanticdb-project-database-file-157e5b2f0fc8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157e5b2f0fc8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157e5b50a8c0"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 52]))                  
+                :type "int")
+                nil [21 330]))          
+      :file "main.c"
+      :pointmax 332
+      :fsize 331
+      :lastmodtime '(23673 31698 99975 571000)
+      :unmatched-syntax nil))
+  :file "!home!jtarchalski!doorstuck!asbestOS!userspace!coreutils!cat!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,22 @@
+\documentclass{article}
+\title{List do Sw. Mikolaja}
+\begin{document}
+
+\maketitle
+\raggedright
+Kochany Sw. Mikolaju,
+w tym roku na Swieta zkomponowalem mala liste rzeczy ktore bym byl bardzo wdzieczny dostac na swieta:
+%\begin{center}
+\begin{itemize}
+
+\item Plyta vinylowa System of a Down
+\item Przyciski mechaniczne Outemu Sky v2
+\item piorka do gitary
+
+\end{itemize}
+
+Wszystkiego co dobre,
+Kuba
+
+%\end{center}
+\end{document}

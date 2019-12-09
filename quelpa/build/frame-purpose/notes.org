@@ -1,0 +1,144 @@
+#+PROPERTY: LOGGING nil
+
+* Tasks
+
+** TODO Add other similar packages to readme
+** TODO Use =display-buffer-in-side-window=
+
+I did not know about this before.  It might be the right tool for the job...
+
+[[https://www.gnu.org/software/emacs/draft/manual/html_node/elisp/Side-Windows.html][GNU Emacs Lisp Reference Manual: Side Windows]]
+
+
++  [ ] [[https://github.com/noctuid/framegroups.el][GitHub - noctuid/framegroups.el: Workspaces for emacs using frames]] ([[https://www.reddit.com/r/emacs/comments/8ad1ji/framegroupsel_workspaces_using_frames/][Reddit]])
++  [ ] [[https://github.com/john2x/nameframe][GitHub - john2x/nameframe: Manage Emacs frames by name]]
+** TODO Make =(date)= select based on timestamps anywhere in entry
+
+e.g. see =org-agenda-get-timestamps=.
+
+It should probably accept an =:inactive= keyword arg to also select inactive timestamps.
+
+Probably, =(date)= should also check =deadline= and =scheduled= timestamps...
+
+* Ideas
+
+** TODO Accept list of predicates
+
+Allow users to specify arbitrary predicates to run on buffers.
+
+** MAYBE Idempotency
+
+It would be nice to have an option like:
+
+#+BEGIN_SRC elisp
+  (frame-purpose-make-frame :only-one t
+                            :modes ...)
+#+END_SRC
+
+So that if that command were called more than once, it wouldn't open a second frame.
+
+** MAYBE Projectile integration
+
+=projectile-project-buffer-p= should probably work, so a keyword arg could specify the root directory (although, is that any different than the filename arg?)
+
+** MAYBE Emacs 26 side windows
+:PROPERTIES:
+:ID:       14216d62-4cd5-4509-a857-a1ef62aa4ab5
+:END:
+
+e.g. as mentioned [[https://www.reddit.com/r/emacs/comments/7h5til/uelizaretskii_emacs_26_is_nearing_its_release_the/dqpdn9n/][here]].  Also from the changelog:
+
+#+BEGIN_QUOTE
+Support for side windows is now official. The display action function 'display-buffer-in-side-window' will display its buffer in a side window. Functions for toggling all side windows on a frame, changing and reversing the layout of side windows and returning the main (major non-side) window of a frame are provided. For details consult the section "(elisp) Side Windows" in the ELisp manual.
+
+Support for atomic windows - rectangular compositions of windows treated by 'split-window', 'delete-window' and 'delete-other-windows' like a single live window - is now official. For details consult the section "(elisp) Atomic Windows" in the ELisp manual.
+#+END_QUOTE
+
+** MAYBE =frame-tabs= package
+
+New in ELPA, might be worth using instead of implementing ourselves.
+
+* Other packages
+
+TODO means to add it to the readme.
+
+** =window-purpose=
+
+I'm not sure if this is helpful or confusing, haha:
+
+#+BEGIN_EXAMPLE
+  ---------------------------------------------------------------------
+  Full information can be found on GitHub:
+  https://github.com/bmag/emacs-purpose/wiki
+  ---------------------------------------------------------------------
+
+  Purpose is a package that introduces the concept of a "purpose" for
+  windows and buffers, and then helps you maintain a robust window
+  layout easily.
+
+  Installation and Setup:
+  Install Purpose from MELPA, or download it manually from GitHub. If
+  you download manually, add these lines to your init file:
+     (add-to-list 'load-path "/path/to/purpose")
+     (require 'window-purpose)
+  To activate Purpose at start-up, add this line to your init file:
+     (purpose-mode)
+
+  Purpose Configuration:
+  Customize `purpose-user-mode-purposes', `purpose-user-name-purposes',
+  `purpose-user-regexp-purposes' and
+  `purpose-use-default-configuration'.
+
+  Basic Usage:
+  1. Load/Save window/frame layout (see `purpose-load-window-layout',
+     `purpose-save-window-layout', etc.)
+  2. Use regular switch-buffer functions - they will not mess your
+     window layout (Purpose overrides them).
+  3. If you don't want a window's purpose/buffer to change, dedicate
+     the window:
+     C-c , d: `purpose-toggle-window-purpose-dedicated'
+     C-c , D: `purpose-toggle-window-buffer-dedicated'
+  4. To use a switch-buffer function that ignores Purpose, prefix it
+     with C-u. For example, [C-u C-x b] calls
+     `switch-buffer-without-purpose'.
+#+END_EXAMPLE
+
+Maybe I could use it to help maintain the sidebar buffers...
+
+** TODO [[https://github.com/bmag/emacs-purpose][GitHub - bmag/emacs-purpose: Manage Windows and Buffers According to Purposes]]
+
+** TODO [[https://github.com/akirak/frame-workflow][GitHub - akirak/frame-workflow: Frame-oriented workflow management for Emacs]]
+
+* Testing code
+
+#+BEGIN_SRC elisp
+  (frame-purpose-make-frame :modes '(matrix-client-mode)
+                            :title "Matrix"
+                            :icon-type (expand-file-name "~/src/emacs/matrix-client-legacy-el/logo.png")
+                            :sidebar 'right)
+
+  (frame-purpose-make-frame :modes '(matrix-client-mode)
+                            :title "Matrix"
+                            :icon-type (expand-file-name "~/src/emacs/matrix-client-legacy-el/logo.png")
+                            :sidebar 'above)
+
+  (frame-purpose-make-frame :modes '(emacs-lisp-mode)
+                            :title "elisp"
+                            :icon-type (expand-file-name "~/src/emacs/matrix-client-legacy-el/logo.png"))
+
+  (frame-purpose-make-frame :modes '(org-mode)
+                            :title "Org"
+                            :icon-type "/home/me/src/emacs/firefox-org-capture/data/org-mode.png")
+
+  (frame-purpose-make-frame :filenames "^/home/me/src/emacs/matrix-client"
+                            :title "matrix-client"
+                            :icon-type (expand-file-name "~/src/emacs/matrix-client-legacy-el/logo.png"))
+
+  (frame-purpose-make-frame :filenames (list (rx bos "/home/me/src/emacs/matrix-client"))
+                            :title "matrix-client"
+                            :icon-type (expand-file-name "~/src/emacs/matrix-client-legacy-el/logo.png"))
+
+  (frame-purpose-make-frame :modes '("elfeed-" "w3m-" "eww-")
+                            :title "elfeed"
+                            :sidebar 'above)
+#+END_SRC

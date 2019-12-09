@@ -1,0 +1,4 @@
+#!/bin/bash
+xrandr --newmode "testmode" $(cvt 1920 1080 120 | awk '{ if ($1 == "Modeline") print $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13 }')
+xrandr --addmode eDP1 "testmode"
+xrandr --output HDMI-0 --mode 1440x900 --rate 75 --pos 0x0 --rotate normal --output DP-0 --primary --mode 1920x1080 --rate 144 --pos 1440x0 --rotate normal --output DP-1 --off --output eDP1 --mode "testmode" --pos 3360x0 --rotate normal --output VIRTUAL1 --off

@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-158e07777b00
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-158e07777b00"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-158e075bf9e8"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("SRC" variable (:default-value ("matrix.c" "led.c")) nil [26 54])
+            ("MCU_FAMILY" variable (:default-value ("KINETIS")) nil [275 296])
+            ("MCU_SERIES" variable (:default-value ("K20x")) nil [296 314])
+            ("MCU_LDSCRIPT" variable (:default-value ("MK20DX256")) nil [618 643])
+            ("MCU_STARTUP" variable (:default-value ("k20x7")) nil [842 862])
+            ("BOARD" variable (:default-value ("PJRC_TEENSY_3_1")) nil [1073 1097])
+            ("MCU" variable (:default-value ("cortex-m4")) nil [1170 1187])
+            ("ARMV" variable (:default-value ("7")) nil [1286 1295]))          
+      :file "rules.mk"
+      :pointmax 1295
+      :fsize 1294
+      :lastmodtime '(23495 40677 849961 260000)
+      :unmatched-syntax nil))
+  :file "!home!jtarchalski!keebs!qmk_firmware!keyboards!arm_handwire!preonic!rev1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

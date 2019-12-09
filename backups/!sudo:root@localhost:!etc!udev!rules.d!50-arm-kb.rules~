@@ -1,0 +1,2 @@
+# Arm mk200x256
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="16C0", ATTRS{idProduct}=="0478", MODE:="0666"

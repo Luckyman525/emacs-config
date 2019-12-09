@@ -1,0 +1,152 @@
+#+TITLE: [[images/logo64.png]] matrix-client.el
+
+[[https://matrix.to/#/#matrix-client.el:matrix.org][https://img.shields.io/matrix/matrix-client.el:matrix.org.svg?label=%23matrix-client.el:matrix.org]]
+
+This is a fork of the [[http://doc.rix.si/projects/matrix.el.html][original matrix.el client]] with the intent of maintaining it further, fixing bugs, and providing long-term goals for the project.
+
+[[images/notifications-buffer-and-room-list_spacemacs-dark.png]]
+
+Of course, since it's Emacs, you can use any Emacs theme you like.  Here's [[https://emacsthemes.com/themes/django-theme.html][django]] without scroll bars or fringes. Note the syntax highlighting in the pasted code, which respects the HTML sent by the client, rather than overriding it like Riot--for better or worse, you decide.  =;)=
+
+[[images/django.png]]
+
+And here's the default Emacs theme:
+
+[[images/frame-purpose-example.png]]
+
+* Installation
+
+*Note:* This package currently requires Emacs 26 or greater.
+
+** Standalone client
+
+The easiest way to start using this package is to download the script =matrix-client-standalone.el.sh= ([[https://github.com/jgkamat/matrix-client-el/blob/master/matrix-client-standalone.el.sh][GitHub link]]), make it executable, and run it from a shell (not from within Emacs).  If any packages are missing, it uses Emacs's built-in =package.el= to install =quelpa= from MELPA, and =quelpa= then installs this client and its dependencies.  Then it runs the "standalone" client.
+
+The script accepts these options (use =--help= for full list):
+
++  =--debug=: Enable ~debug-on-error~ in the Emacs session.
++  =--upgrade=: Upgrade the client to the latest version before connecting.  (This also upgrades the script in the package directory, but any changes to it won't take effect until the next time it's run.)
+
+The script doesn't load any standard Emacs user configuration files, so it's basically like a clean Emacs config.  However, it does initialize and use the existing Emacs packages directory (e.g. =~/.emacs.d/elpa=), so keep that in mind; any necessary packages will be installed there, and all autoload files will be read (which means that you can load any themes that you already have installed).  It also loads and saves its own =user-init-file= at =~/.config/matrix-client-standalone.el=, which preserves customized variables and faces; you can add your own code to it, just as you would to your regular Emacs =.emacs= or =init.el= file, which gives you a config mostly independent from your main Emacs config.
+
+To make switching room buffers easy, the default completion settings are improved, and these key bindings are in effect by default:
+
++  @@html:<kbd>@@C-<tab>@@html:</kbd>@@: Switch room buffer.
++  @@html:<kbd>@@F1@@html:</kbd>@@: Show only =Notifications= buffer.
++  @@html:<kbd>@@M-/@@html:</kbd>@@: Expand text before point with ~hippie-expand~.  Helpful for the =/upload= command as it dynamically expands filename paths.
+
+There's also a context menu available in the sidebar by right-clicking rooms.q
+
+After using the "standalone" client, the packages will be installed to your Emacs packages directory, so then you can also use it in your main Emacs config.
+
+Of course, this is a rather unorthodox way to install and use an Emacs package, so if you are uncomfortable with this method, please do inspect the code yourself, or use another installation method.
+
+** Quelpa
+
+Installing directly with [[https://framagit.org/steckerhalter/quelpa][Quelpa]] into your Emacs config is also very easy:
+
+1.  Install [[https://framagit.org/steckerhalter/quelpa-use-package#installation][quelpa-use-package]] (which can be installed directly from MELPA).
+2.  Add this form to your init file:
+
+#+BEGIN_SRC emacs-lisp
+  (use-package matrix-client
+    :quelpa ((matrix-client :fetcher github :repo "alphapapa/matrix-client.el"
+                            :files (:defaults "logo.png" "matrix-client-standalone.el.sh"))))
+#+END_SRC
+
+After installation, upgrading can be done through =quelpa=, e.g. with @@html:<kbd>@@C-u M-x quelpa RET matrix-client RET@@html:</kbd>@@.
+
+** Manually
+
+Simply put this repo's directory onto your ~load-path~, and eval ~(require 'matrix-client)~.  Note that when installing manually, you will also need to manually install all dependencies.  
+
+Once the project achieves a sufficiently high quality or demand, it may be submitted to MELPA, but that probably won't happen anytime soon.
+
+* Usage
+
+If you don't already have a Matrix account, you can register on a [[https://www.hello-matrix.net/public_servers.php][public homeserver]] such as =matrix.org=. =matrix-client.el= doesn't currently support registration, but you can use another client like [[https://riot.im/app/#/register][Riot]] to register an account.
+
+Then run the command ~matrix-client-connect~ or ~matrix-client-frame~ to connect.
+
+** Commands
+
++  List room commands: =/help=
++  Membership
+     -  Join a room: =/join #room:server=
+     -  Leave the current room: =/leave=
+     -  List room users: =/who=
++  Room settings
+     -  Set room priority: ~/priority~
+     -  List or set user-tags: =/tags=
+     -  Add user-tags: =/tag=
+     -  Delete user-tags: =/untag=
+     -  Set notification settings: =/notify=
+          +  Note: These settings are currently local to Emacs and do not integrate with the API spec.
++  Sending messages:
+     -  Send *Org-formatted* messages: =/org=
+          +  *Note: Sending Org-formatted messages is the default.*  You can disable it by changing the option ~matrix-client-send-as-org-by-default~, after which Org messages can be sent with the =/org= command.
+          +  You can send almost any Org syntax, including simple emphasis like *bold* and /italic/, one-line code blocks with =:= at the beginning of a line, code emphasis with =~=, even Org tables and complete =#+BEGIN_SRC lang ... #+END_SRC= blocks!  Emacs will even send the code blocks colorized according to your theme, and other =matrix-client.el= users will see the colors!
+          +  Press @@html:<kbd>@@C-c '@@html:</kbd>@@ (or whatever you may have bound =org-edit-special= to) to edit the current message in a dedicated Org buffer, then save it back to the room input line with @@html:<kbd>@@C-x C-s@@html:</kbd>@@ (or whatever you may have bound =save-buffer= to).
+     -  Send unformatted messages: =/raw=
+          +  When ~matrix-client-send-as-org-by-default~ is enabled, this sends messages without Org formatting.
+     -  Send HTML messages: =/html=
++  Upload a file: =/upload PATH-OR-URL=, or drag-and-drop files or URLs onto the room buffer
++  Enable pretty colors: =/rainbow=
++  Other:
+     -  Complete usernames and IDs: @@html:<kbd>@@TAB@@html:</kbd>@@ (with point at prompt)
+     -  Move point between messages:  @@html:<kbd>@@TAB@@html:</kbd>@@/@@html:<kbd>@@S-TAB@@html:</kbd>@@
+     -  Return point to input prompt: @@html:<kbd>@@RET@@html:</kbd>@@ (with point before prompt)
+     -  Open room in a new frame:  Middle-click or press @@html:<kbd>@@<C-return>@@html:</kbd>@@ in the room list.
+     -  Switch to the notifications buffer: @@html:<kbd>@@C-c C-n@@html:</kbd>@@
+     -  Show room list: =/rooms=
+
+** Notifications buffer
+
+The =*Matrix Notifications*= buffer displays notifications from all rooms, acting as a sort of meta-buffer.  By setting a room's notifications to =always=, you can monitor all messages from that room in the notifications buffer.  Press @@html:<kbd>@@C-c C-n@@html:</kbd>@@ from a room buffer to show the notifications buffer. 
+
+You can also *reply* to messages directly from the notifications buffer.  Just as in a room's buffer, press @@html:<kbd>@@TAB@@html:</kbd>@@/@@html:<kbd>@@S-TAB@@html:</kbd>@@ to navigate between messages, then press @@html:<kbd>@@r@@html:</kbd>@@ on a message, type your reply, and send by pressing @@html:<kbd>@@RET@@html:</kbd>@@.  Note that this only allows replies to messages; to send a non-reply message, do so from the room's buffer.
+
+To jump to a message in the room's buffer, press @@html:<kbd>@@RET@@html:</kbd>@@ with point on the message.
+
+Here's an example of following multiple, related conversations across multiple rooms in the notifications buffer:
+
+[[images/notifications-buffer.png]]
+
+** Room list
+
+Open the room list by pressing @@html:<kbd>@@C-c C-r@@html:</kbd>@@ or calling command =matrix-client-room-list=.  Just like in the dedicated frame's room-list sidebar, you can click rooms to show their buffers, right-click rooms to change their settings, and middle-click rooms to open them in a new frame.
+
+* Configuration
+
+While there are a lot of configuration settings, here are a selection that are
+the most useful:
+
+| Variable                          | Description                           |
+|-----------------------------------+---------------------------------------|
+| ~matrix-client-show-images~       | Control if images are shown inline    |
+| ~matrix-client-render-presence~   | Control display of presence           |
+| ~matrix-client-render-membership~ | Control display of membership changes |
+| ~matrix-client-use-tracking~      | Enable tracking.el integration        |
+
+Many more settings are documented through customize.
+
+* Contributing
+
+Contributions are much appreciated, and what help this project stay afloat! If
+you have an issue, please report it via [[https://github.com/jgkamat/matrix-client-legacy-el/issues][github issues]]. If you have a patch, you
+may submit it via [[https://github.com/jgkamat/matrix-client-legacy-el/pulls][a pull request]].
+
+A room for discussion is located at [[https://matrix.to/#/#matrix-client-el:matrix.org][#matrix-client-el:matrix.org]]
+
+Development alerts are available at #matrix-client-el-dev:matrix.org.
+
+* Authors
+
+- [[http://whatthefuck.computer/][Ryan Rix]] - Created the initial matrix-client.el.
+- [[https://github.com/alphapapa][alphapapa]] - Images, Performance optimizations, Last seen tracking, and a shiny
+  new backend!
+- [[https://jgkamat.github.io/][jgkamat]] - Maintenance and reviews.
+
+* License
+
+See LICENSE in the root of the repository for legal information.

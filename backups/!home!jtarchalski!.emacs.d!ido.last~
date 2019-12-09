@@ -1,0 +1,122 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jtarchalski/doorstuck/asbestOS/kernel/" . "core/")
+ ("/home/jtarchalski/doorstuck/asbestOS/" . "kernel/")
+ ("/home/jtarchalski/doorstuck/" . "asbestOS/")
+ ("/home/jtarchalski/.config/i3blocks/" . "volume/")
+ ("/home/jtarchalski/.config/" . "twmn/")
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/arm_handwire/preonic/keymaps/" . "default/")
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/arm_handwire/preonic/" . "keymaps/")
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/arm_handwire/" . "preonic/")
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/" . "arm_handwire/")
+ ("/home/jtarchalski/keebs/qmk_firmware/" . "keyboards/")
+ ("/home/jtarchalski/learning_C/C/" . "learning_scripts/")
+ ("/home/jtarchalski/learning_C/" . "C/")
+ ("/home/jtarchalski/Downloads/" . "win10_iso/")
+ ("/home/jtarchalski/" . "doorstuck/")
+ ("/home/jtarchalski/keebs/dactyl-keyboard/src/" . "dactyl_keyboard/")
+ ("/home/jtarchalski/keebs/dactyl-keyboard/" . "src/")
+ ("/home/jtarchalski/keebs/" . "qmk_firmware/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jtarchalski/"
+ "/home/jtarchalski/doorstuck/asbestOS/kernel/core/"
+ "/home/jtarchalski/.config/twmn/"
+ "/home/jtarchalski/ncurses/"
+ "/home/jtarchalski/.config/rofi/"
+ "/home/jtarchalski/.config/i3blocks/volume/"
+ "/home/jtarchalski/.config/i3/"
+ "/home/jtarchalski/.config/i3blocks/"
+ "/home/jtarchalski/.config/i3blocks/volume-pulseaudio/"
+ "/home/jtarchalski/.config/polybar/"
+ "/home/jtarchalski/keebs/qmk_firmware/keyboards/arm_handwire/preonic/keymaps/default/"
+ "/home/jtarchalski/learning_C/C/learning_scripts/"
+ "/home/jtarchalski/keebs/dactyl-keyboard/src/dactyl_keyboard/"
+ "/home/jtarchalski/keebs/dactyl-keyboard/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "main.c"
+ "twmn.conf"
+ "hello_world.c"
+ "config.rasi"
+ "README.md"
+ "config"
+ "volume-pulseaudio"
+ "i3blocks.conf"
+ "launch.sh"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jtarchalski/" (23662 55301 323261 993000) "strap.sh" "matrix-client-standalone.el.sh" "i3-layout-manager/" "Star Wars Binge.xspf" "emacs-application-framework/" ".gem/" "kali-all_iso/" ".viminfo" "nohup.out" "Star.Wars.Episode.II.Attack.Of.The.Clones.2002.1080p.Bluray.x264.anoXmous/" "dotfiles/" ".tor-browser/" "your-freedom/" ".mputils/" ".steam/" "doorstuck/" ".nvim/" "blackarch-linux-live-2018.12.01-x86_64.iso" ".m2/" "keebs/" ".mcedit/" ".local/" "network.sh" ".bash_history" ".rtorrent.rc" "magnet" ".minecraft/" "PlayOnLinux's virtual drives/" "Videos/" ".npm/" "tor/" ".calcurse/" "mail/" ".masterpdfeditor/" ".xsession-errors" "better-defaults/" "list" ".fonts.conf" ".icons/" "Star.Wars.Episode.VI.Return.Of.The.Jedi.1983.1080p.Bluray.x264.anoXmous.mkv/" "learning_C/" "utils/" ".steampath" ".lein/" ".histfile" ".yarnrc" ".emacs.d/" "global/" ".ncmpcpp/" ".caches/" "archlive/" ".mupdf.history" ".java/" "nheko-backtrace.dump" "backup/" ".nv/" ".openshot_qt/" ".nyx/" "about" "Desktop/" "Public/" ".lesshst" ".TeamSpeak 3/" "Templates/" "Ender-3 Pro quick start guide V1.0.pdf" "mnt/" ".surf/" ".Xresources" ".electron-gyp/" ".rtorrent.session/" ".android/" "xrandr.txt" "OpenBoardView/" ".zcompdump" ".fehbg" "VirtualBox VMs/" "ncurses/" ".mozilla/" "#mkolaj.ltx#" ".rnd" ".npmrc" "nvidia.hook" ".xbindkeysrc" ".electron/" "wacom/" "P4wnP1/" "review_criteria" ".esd_auth" "dead.letter" "ruby/" ".inputrc" "aur.txt" ".kde4/" ".pine-debug1" "PCBs/" ".chatty/" "mumble-jack/" "#*message*-20190221-004304#" ".bashrc" ".helm/" ".cache/" ".gradle/" "Music/" ".gitconfig" ".gnupg/" "opt/" "prv_mkolaj.log" ".cmake/" ".gtkrc-2.0" ".conkyrc" "Star.Wars.Episode.I.The.Phantom.Menace.1999.1080p.Bluray.x264.anoXmous/" "Pictures/" ".cling_history" ".w3m/" "KiCAD-Keyboard-Tutorial/" ".ssh/" "pkglist/" ".xsession-errors.old" "phone_shit/" ".oracle_jre_usage/" ".node-gyp/" ".cpan/" "Star.Wars.Episode.V.The.Empire.Strikes.Back.1980-TUSAHD/" "drinking_game" ".plover-lock-MSI-0" ".wget-hsts" "nesasm-git/" ".torrents/" ".purple/" "ps.txt" ".config/" ".bash_profile" ".vim/" "#foo.txt#" ".bash_logout" ".ratox.tox" ".ts3client/" "recovtspeak.txt" "soundcardstart.sh" ".pulse-cookie" "Star.Wars.Episode.III.Revenge.Of.The.Sith.2005.1080p.Bluray.x264.anoXmous/" "Star Wars The Clone Wars/" ".python_history" ".technic/" ".mpd/" ".gphoto/" "Star Wars The Clone Wars (2008) [1080p] {5.1}/" "texput.log" ".cvspass" "LaTeX/" "Downloads/" ".wine/" "Chatty/" ".xinitrc" ".Xauthority" ".nvidia-settings-rc" ".steampid" ".pki/" ".emacs" ".addressbook" "temp/" "Documents/" ".pinerc" "drawings/" ".screenlayout/" ".conky/" ".log/" ".asoundrc" "Star.Wars.Episode.IV.A.New.Hope.1977.1080p.Bluray.x264.anoXmous/" "Games/" "wallpaper.png" "listdoswmklj/" ".PlayOnLinux/" "revision.org" ".layouts/" ".dmrc" ".lyrics/" "1440x1080@144.sh" ".pulse/" ".fonts/" "../" "./")
+
+ ("/home/jtarchalski/doorstuck/asbestOS/kernel/core/" (23657 47836 326615 417000) "args.c" "log.c" "textui.c" "main.c" "../" "dev.c" "pci.c" "terminal.c" "init.c" "module.c" "time.c" "./" "panic.c" "hostname.c")
+
+ ("/home/jtarchalski/doorstuck/asbestOS/kernel/" (23657 47836 333282 84000) "drivers/" ".git" "include/" "build.sh" "LICENSE" "modules.py" "CMakeLists.txt" "../" "exec/" "runtime/" "README.md" "ds/" "fs/" "mm/" "doc/" "cmake/" "boot/" ".gitignore" "arch/" "./" "core/" "sched/" "toolchain/" "misc/")
+
+ ("/home/jtarchalski/doorstuck/asbestOS/" (23661 60915 563153 595000) ".git/" "build.sh" "#build.sh#" "LICENSE" "update-kernel.sh" "kernel/" "CMakeLists.txt" "GPATH" "test.log" "build/" "toolchains/" "../" "test.sh" "README.md" "GRTAGS" "modules/" "cmake/" ".gitmodules" ".gitignore" "disk/" "./" "failed_tests/" "make.sh" "toolchain/" "full-test.sh" "util/" "GTAGS" "userspace/")
+
+ ("/home/jtarchalski/doorstuck/" (23660 37430 972843 50000) "toolchains/" "../" "asbestOS/" "test.sh" "newlib/" "./")
+
+ ("/home/jtarchalski/.config/twmn/" (23658 64217 66665 696000) "twmn.conf" "../" "./" "--help.conf" "-d.conf")
+
+ ("/home/jtarchalski/.config/" (23660 21100 766350 753000) "ibus/" "emaildefaults" "csmd/" "menus/" "VirtualBoxrc" "eventviewsrc" "knotifyrc" "akonadi-migrationrc" "krunnerrc" "conky-manager.json" "neofetch/" "Trolltech.conf" "ranger/" "i3blocks/" "cef_user_data/" "kwalletrc" "jack/" "kateschemarc" "pulse/" "Code Industry/" "kgammarc" "plasmarc" "autostart-scripts/" "enchant/" "Riot/" "fish/" "GIMP/" "VirtualBoxVMrc" "nheko/" "pavucontrol.ini" "systemd/" "discoverrc" "kiorc" "device_automounter_kcmrc" "kconf_updaterc" "plasmashellrc" "../" "startupconfigkeys" "dragonplayerrc" "korganizerrc" "kde.org/" "akonadi_indexing_agentrc" "OpenSCADrc" "kalarmrc" "akonadi_maildir_resource_0rc" "startupconfig" "akonadi/" "compton.conf" "procps/" "vlcrc" "timestamps/" "okularrc" "unity3d/" "OpenBoardView/" "plasma-org.kde.plasma.desktop-appletsrc" "autostart/" "fontconfig/" "libaccounts-glib/" "wal/" "kscreenlockerrc" "kritarc" "powerdevilrc" "aurutils/" "karboncalligraphyrc" "twmn/" "discord/" "rncbc.org/" "kservicemenurc" "kmail2rc" "REAPER/" "tox-universal-client/" "dolphinrc" "specialmailcollectionsrc" "OpenSCAD/" "gtk-3.0/" "baloofilerc" "ktimezonedrc" "kxkbrc" "systemsettingsrc" "gtk-2.0/" "kactivitymanagerd-statsrc" "gconf/" "kcmfonts" "i3/" "kcminputrc" "kwinrc" "kwinrulesrc" "startupconfigfiles" "matrix-client-standalone.el" "krfbrc" "plasma-nm" "kactivitymanagerdrc" "deepin/" "curarc" "kfontinstuirc" "./" "bluedevilglobalrc" "kdeglobals" "cura/" "katemetainfos" "nvim/" "mpd/" "google-chrome-beta/" "webengineurlinterceptoradblockrc" "tabletdblocalrc" "whoozle.github.io/" "powermanagementprofilesrc" "user-dirs.dirs" "QMatrixClient/" "konsolerc" "plasma-localerc" "gtkrc" "session/" "dconf/" "gwenviewrc" "systemmonitorrc" "emailidentities" "QtProject.conf" "Cadence/" "rofi/" "korgacrc" "khotkeysrc" "trashrc" "Master PDF Editor 5rc" "mimeapps.list" "kmixrc" "eDEX-UI/" "akonadi_akonotes_resource_0rc" "akonadi-firstrunrc" "K/" "katevirc" "falkTX/" "plasma-workspace/" "akregatorrc" "katerc" "user-dirs.locale" "ksysguardrc" "kritadisplayrc" "kicad/" "vifm/" "kded_device_automounterrc" "arkrc" "drkonqirc" "gtkrc-2.0" "polybar/" "tox/" "kmenueditrc" "ksplashrc" "kglobalshortcutsrc" "baloofileinformationrc" "configstore/" "ksmserverrc" "VirtualBox/" "a2j/" "Mumble/" "Unknown Organization/" "etcher-electron/" "vlc/" "obs-studio/" "inkscape/")
+
+ ("/home/jtarchalski/ncurses/" (23659 19998 496440 917000) "../" "hello_world.c" "./" "a.out")
+
+ ("/home/jtarchalski/.config/rofi/" (23628 35079 792488 809000) "../" "config.rasi" "./" "scripts/")
+
+ ("/home/jtarchalski/.config/i3blocks/" (23659 14453 276499 986000) "email/" "afs/" "volume/" ".git/" "nm-vpn/" "rofi-calendar/" "usb/" "ISSUE_TEMPLATE.md" "disk-io/" "tahoe-lafs/" "monitor_manager/" "time/" "iface/" "CONTRIBUTING.md" "README.adoc" "gpu-load/" "cpu_usage/" "openvpn/" "../" "arch-update/" "aur-update/" "batterybar/" "battery/" "bandwidth2/" "essid/" "bandwidth/" "bandwidth3/" "config.example" "volume-pulseaudio/" "calendar/" "keyindicator/" "cpu_usage2/" ".gitignore" "disk/" "docker/" "memory/" "./" "apt-upgrades/" "load_average/" "wifi/" "LICENSE.md" "shutdown_menu/" "ytdl-mpv/" "wlan-dbm/" "key_layout/" "config" "kbdd_layout/" "battery2/" "kubernetes/" "mediaplayer/" "temperature/")
+
+ ("/home/jtarchalski/.config/i3/" (23659 14403 323167 184000) "../" "./" "config")
+
+ ("/home/jtarchalski/.config/i3blocks/volume/" (23659 795 723312 133000) "volume" "../" "README.md" "./" "i3blocks.conf" "volume.png")
+
+ ("/home/jtarchalski/.config/i3blocks/volume-pulseaudio/" (23658 54707 349971 117000) "LICENSE" "volume-pulseaudio-high.png" "volume-pulseaudio-med.png" "../" "README.md" "volume-pulseaudio" "./" "i3blocks.conf" "volume-pulseaudio-mute.png" "volume-pulseaudio-low.png")
+
+ ("/home/jtarchalski/.config/polybar/" (23626 15928 669783 729000) "../" "./" "config" "launch.sh")
+
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/arm_handwire/preonic/keymaps/default/" (23604 38398 779949 910000) "../" "readme.md" "keymap.c" "./" "#keymap.c#")
+
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/arm_handwire/preonic/keymaps/" (23495 40677 849961 260000) "../" "default/" "./")
+
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/arm_handwire/preonic/" (23599 36185 293100 148000) "keymaps/" "config.h" "teensy_lc_onekey/" "rev2/" "../" "preonic.h" "stm32_f072_onekey/" "rev1/" "stm32_f103_onekey/" "readme.md" "./" "boards/" "preonic.c" "ld/" "rules.mk")
+
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/arm_handwire/" (23514 2750 626628 500000) "../" "preonic/" "./")
+
+ ("/home/jtarchalski/keebs/qmk_firmware/keyboards/" (23594 8578 863315 720000) "sol/" "atreus62/" "satan/" "niu_mini/" "thevankeyboards/" "30wer/" "bmini/" "mitosis/" "redox_w/" "tanuki/" "miniaxe/" "fleuron/" "fourier/" "zinc/" "arm_handwire/" "phantom/" "amj96/" "jc65/" "cospad/" "sx60/" "katana60/" "wilba_tech/" "maxipad/" "ckeys/" "lets_split_eh/" "tkc1800/" "alps64/" "meira/" "four_banger/" "omnikey_blackheart/" "bantam44/" "s60_x/" "knops/" "sixshooter/" "namecard2x4/" "scrabblepad/" "yd68/" "bigseries/" "kc60/" "cu75/" "chocopad/" "ymdk_np21/" "cod67/" "e6v2/" "at101_blackheart/" "playkbtw/" "kbd8x/" "fortitude60/" "treasure/" "westfoxtrot/" "xmmx/" "newgame40/" "mechmini/" "1upkeyboards/" "s7_elephant/" "../" "iris/" "kbd66/" "toad/" "novelpad/" "bminiex/" "hhkb/" "divergetm2/" "alpha/" "ep/" "dc01/" "helix/" "ergodone/" "laplace/" "hid_liber/" "noxary/" "cu24/" "ergoinu/" "sixkeyboard/" "gskt00/" "xd60/" "tokyo60/" "massdrop/" "comet46/" "kbd6x/" "kmini/" "deltasplit75/" "gonnerd/" "canoe/" "h87a/" "felix/" "mt40/" "viterbi/" "eco/" "preonic/" "uk78/" "ps2avrGB/" "kmac/" "fc660c/" "speedo/" "zen/" "kbd4x/" "alf/" "diverge3/" "bface/" "kbd67/" "kira75/" "paladin64/" "rorschach/" "amj60/" "zlant/" "vinta/" "baguette/" "chibios_test/" "amjpad/" "nyquist/" "acr60/" "bigswitch/" "primekb/" "lfkeyboards/" "dk60/" "s65_x/" "readme.md" "gh80_3000/" "al1/" "ymd75/" "z150_blackheart/" "rama/" "ergodash/" "412_64/" "duck/" "amj40/" "chimera_ergo/" "handwired/" "infinity60/" "jj50/" "m10a/" "dichotomy/" "chimera_ls/" "ergotravel/" "crkbd/" "atreus/" "org60/" "./" "k_type/" "christmas_tree/" "levinson/" "contra/" "qwertyydox/" "redox/" "espectro/" "kinesis/" "blockey/" "chimera_ortho/" "fractal/" "gh60/" "jd40/" "ergo42/" "hs60/" "xd87/" "puck/" "meme/" "subatomic/" "ARMhandwired/" "converter/" "crawlpad/" "bfo9000/" "dilly/" "jj40/" "kbd75/" "orange75/" "ymd96/" "the_ruler/" "planck/" "fc980c/" "zeal65/" "clueboard/" "lets_split/" "ergodox_ez/" "whitefox/" "40percentclub/" "atomic/" "model01/" "staryu/" "tragicforce68/" "alu84/" "orthodox/" "bfake/" "ok60/" "miuni32/" "minidox/" "vision_division/" "kc60se/" "mint60/" "singa/" "wavelet/" "ergodox_infinity/" "jd45/" "kona_classic/" "telophase/" "atom47/" "tetris/" "do60/" "dz60/" "skog/" "facew/" "xd75/" "mxss/" "catch22/" "bpiphany/" "6ball/" "s65_plus/" "zeal60/" "jm60/" "hadron/" "melody96/" "daisy/" "pearl/" "evil80/" "v60_type_r/" "tada68/" "idobo/" "panc60/" "launchpad/" "9key/" "proton_c/" "lily58/" "mehkee96/" "kbd19x/" "quefrency/" "vitamins_included/")
+
+ ("/home/jtarchalski/keebs/qmk_firmware/" (23594 8578 553315 724000) "drivers/" ".git/" "build_keyboard.mk" "LICENSE" ".editorconfig" "build_test.mk" "build_full_test.mk" ".vscode/" "users/" "autocomplete.sh" "license_GPLv3.md" "layouts/" "../" "license_GPLv2.md" ".travis.yml" "secrets.tar.enc" "lib/" "shell.nix" "arm_handwire_preonic_rev2_default.hex" "Doxyfile" "CODE_OF_CONDUCT.md" "readme.md" ".gitmodules" "book.json" "Vagrantfile" "keyboards/" "quantum/" "doxygen-todo" ".gitattributes" ".gitignore" "license_Modified_BSD.md" "./" "tests/" "message.mk" "bootloader.mk" "testlist.mk" ".clang_complete" "arm_handwire_preonic_rev1_default.hex" ".github/" "Makefile" "common.mk" "docs/" "tmk_core/" ".build/" "Dockerfile" "common_features.mk" "util/" "build_layout.mk")
+
+ ("/home/jtarchalski/keebs/qmk_dactyl-manuform/" (23500 36120 803272 59000) ".git/" "build_keyboard.mk" "build_test.mk" "../" ".travis.yml" "dactyl-manuform_4x5-default.hex" "doc/" "lib/" "readme.md" ".gitmodules" "Vagrantfile" "keyboards/" "quantum/" ".gitattributes" ".gitignore" "./" "message.mk" "testlist.mk" "dactyl-manuform_5x6-default.hex" "Makefile" "common.mk" "tmk_core/" ".build/" "Dockerfile" "keyboard/" "util/" "dactyl-manuform_h34d3r.hex")
+
+ ("/home/jtarchalski/learning_C/C/learning_scripts/" (23562 37803 736468 254000) "../" "tab_blank_new-count.c" "bl-replace.c" "hello.c" "getchar.c" "cel-fahr.c" "bkspc_tab_bkslsh-replace.c" "./" "wc-barebones.c" "a.out" "charcount.c" "linecount.c" "fahr-cel.c")
+
+ ("/home/jtarchalski/keebs/dactyl-keyboard/" (23553 45592 513227 100000) ".git/" "resources/" "LICENSE" "guide/" "target/" ".lein-repl-history" "src/" "../" "project.clj" "README.md" "doc/" "4x6.patch" ".gitignore" "./" "reload.sh" "things/" "6x6.patch" "create-models.sh" "tags" "test/" "5x6.patch" "LICENSE-models")
+
+ ("/home/jtarchalski/keebs/dactyl-keyboard/src/dactyl_keyboard/" (23514 7389 859912 11000) "../" "./" "dactyl.clj")
+
+ ("/home/jtarchalski/learning_C/C/" (23495 32191 913316 556000) "learning_scripts/" "../" "./")
+
+ ("/home/jtarchalski/learning_C/" (23498 7616 666603 959000) "C++/" ".git/" "../" "README.md" "./" "C/")
+
+ ("/home/" (23495 32007 700345 792000) "jtarchalski/" "../" "./" "lost+found/")
+
+ ("/home/jtarchalski/Downloads/win10_iso/" (23495 32236 286456 414000) "fonts/" "../" "Win10_1803_EnglishInternational_x64.iso" "./" "install.wim")
+
+ ("/home/jtarchalski/Downloads/" (23539 10221 519823 730000) "kali-linux-2018-W45-amd64.iso" "TechnicLauncher.jar" "SteamSetup.exe" "steam_logo.png" "reference_manual.pdf" "scarlett-mixcontrol-1.8.exe" "jre-8u181-linux-x64.tar.gz" "toolchains/" "kali-linux-2018.3a-amd64.iso.torrent" "../" "setup.exe" "alx-dmks-installer.tar.gz" "gparted-live-0.32.0-1-amd64.iso" "AdbWinUsbApi.dll" "csgo/" "Win10_Edu_1803_EnglishInternational_x64.iso" "etcher/" "gru_plan_template.jpg" "twrp-3.2.3-1-dumpling.img" "win10_iso/" "teacherspet-1.0rc1.tar.gz" "Magisk-v17.1.zip" "reference_manual(1).pdf" "downloadconfigfile.conf" "SLAM_v1.5.4.zip" "ttf/" "SHA256SUMS.gpg" "SHA256SUMS" "./" "hurd-live-install-1273300101.iso" "AGNIESZKA SUROWIAK. - CV (ENGLISH).docx" "BIOS/" "magenta_toolchains.tar.gz" "sweating_black_guy.jpg" "fastboot/" "pro_configs/" "helpdesk.zip" "alx-dmks-installer/" "teacherspet-1.0/" "Hack-v3.003-ttf.zip" "Setup.iss")
+
+ ("/home/jtarchalski/keebs/dactyl-keyboard/src/" (23499 40893 186622 460000) "../" "./" "dactyl_keyboard/")
+
+ ("/home/jtarchalski/keebs/" (23499 40869 109956 50000) "../" "qmk_dactyl-manuform/" "dactyl-keyboard/" "teensy_loader_cli/" "./" "qmk_firmware/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

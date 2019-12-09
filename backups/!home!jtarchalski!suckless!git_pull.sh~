@@ -1,0 +1,10 @@
+#!/bin/bash
+
+dir() {
+	dir=`ls -lh | awk '{ if ($1 == "drwxr-xr-x") print $9}'`
+	echo -e "$dir"
+}
+
+while true ; do
+	echo -e "$(dir)"
+done

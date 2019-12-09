@@ -1,0 +1,53 @@
+;; Object semanticdb-project-database-file-157e5b3a1ba4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157e5b3a1ba4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157e5b3a1bb0"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("dirent.h" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("sys/stat.h" include (:system-flag t) nil [80 101])
+            ("KNRM" variable (:constant-flag t) nil [111 115])
+            ("KRED" variable (:constant-flag t) nil [135 139])
+            ("KGRN" variable (:constant-flag t) nil [160 164])
+            ("KYEL" variable (:constant-flag t) nil [185 189])
+            ("KBLU" variable (:constant-flag t) nil [210 214])
+            ("KMAG" variable (:constant-flag t) nil [235 239])
+            ("KCYN" variable (:constant-flag t) nil [260 264])
+            ("KGRY" variable (:constant-flag t) nil [285 289])
+            ("KWHT" variable (:constant-flag t) nil [310 314])
+            ("KHGRY" variable (:constant-flag t) nil [335 340])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [361 370])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [371 383]))                  
+                :type "int")
+                nil [352 1312]))          
+      :file "main.c"
+      :pointmax 1314
+      :fsize 1313
+      :lastmodtime '(23673 31698 99975 571000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("KWHT" . ((string "\"\\x1B[97m\"" 316 . 326)))
+          ("KYEL" . ((string "\"\\x1B[93m\"" 191 . 201)))
+          ("KBLU" . ((string "\"\\x1B[94m\"" 216 . 226)))
+          ("KMAG" . ((string "\"\\x1B[95m\"" 241 . 251)))
+          ("KNRM" . ((string "\"\\x1B[0m\"" 117 . 126)))
+          ("KRED" . ((string "\"\\x1B[92m\"" 141 . 151)))
+          ("KCYN" . ((string "\"\\x1B[96m\"" 266 . 276)))
+          ("KGRY" . ((string "\"\\x1B[37m\"" 291 . 301)))
+          ("KHGRY" . ((string "\"\\e[100m\"" 341 . 350)))
+          ("KGRN" . ((string "\"\\x1B[92m\"" 166 . 176)))
+          )
+))
+  :file "!home!jtarchalski!doorstuck!asbestOS!userspace!coreutils!ls!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

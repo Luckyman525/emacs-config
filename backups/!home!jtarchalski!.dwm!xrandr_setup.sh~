@@ -1,0 +1,3 @@
+#!/bin/bash
+
+monitor=`xrandr | awk '{ if ($2 == "connected") print $1}`

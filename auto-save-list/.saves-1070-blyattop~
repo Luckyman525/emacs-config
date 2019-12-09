@@ -1,0 +1,4 @@
+/sudo:root@localhost:/etc/systemd/logind.conf
+/tmp/#!sudo:root@localhost:!etc!systemd!logind.conf#
+/etc/systemd/system.conf
+/etc/systemd/#system.conf#

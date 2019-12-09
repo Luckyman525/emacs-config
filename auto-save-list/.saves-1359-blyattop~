@@ -1,0 +1,10 @@
+/sudo:root@localhost:/etc/mkinitcpio.conf
+/tmp/#!sudo:root@localhost:!etc!mkinitcpio.conf#
+/sudo:root@localhost:/boot/refind_linux.conf
+/tmp/#!sudo:root@localhost:!boot!refind_linux.conf#
+/home/jtarchalski/utils/scripts/aurin.sh
+/home/jtarchalski/utils/scripts/#aurin.sh#
+/home/jtarchalski/scripts/book_save.sh
+/home/jtarchalski/scripts/#book_save.sh#
+/home/jtarchalski/.bashrc
+/home/jtarchalski/#.bashrc#

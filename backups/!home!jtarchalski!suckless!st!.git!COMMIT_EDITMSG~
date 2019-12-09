@@ -1,0 +1,27 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 3 and 1 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# Changes to be committed:
+#	modified:   config.def.h
+#	modified:   config.h
+#	modified:   x.c
+#
+# Untracked files:
+#	#st.h.rej#
+#	boxdraw.o
+#	config.h.bak
+#	config.h.orig
+#	config.h.rej
+#	patches/
+#	st
+#	st.o
+#	x.c.orig
+#	x.c.rej
+#	x.o
+#

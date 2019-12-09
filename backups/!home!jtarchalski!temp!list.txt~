@@ -1,0 +1,42 @@
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) ttf-ms-fonts-2.0-10
+
+Total Installed Size:  5.42 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+ttf-ms-fonts: /usr/share/fonts/TTF/arial.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/arialbd.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/arialbi.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/ariali.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/ariblk.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/comic.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/comicbd.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/cour.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/courbd.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/courbi.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/couri.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/georgia.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/georgiab.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/georgiai.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/georgiaz.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/impact.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/times.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/timesbd.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/timesbi.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/timesi.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/trebuc.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/trebucbd.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/trebucbi.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/trebucit.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/verdana.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/verdanab.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/verdanai.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/verdanaz.ttf exists in filesystem
+ttf-ms-fonts: /usr/share/fonts/TTF/webdings.ttf exists in filesystem
+Errors occurred, no packages were upgraded.

@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={7in, 10.5in}]{geometry}
+\usepackage{subfiles}
+
+\title{Computer Network Security for a Small Scale Network}
+\author{Jakub Tarchalski}
+
+\begin{document}
+
+\ttfamily
+
+\begin{titlepage}
+  \maketitle
+\end{titlepage}
+
+\flushleft
+\section{Possible Weaknesses in Network Infrastructure}
+
+\section{Assessment of Assets}
+
+\section{Risk Analysis}
+
+\section{Precautions, Countermeasures and Risk Mitigation (Network)}
+
+\section{Precautions, Countermeasures and Risk Mitigation (Router)}
+
+\section{Procedures to Protect Network and Information Contained in Guest Devices}
+
+\section{Changing the Network to Accomodate a File Server}
+
+\end{document}

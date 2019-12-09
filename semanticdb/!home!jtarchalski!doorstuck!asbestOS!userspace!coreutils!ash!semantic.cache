@@ -1,0 +1,205 @@
+;; Object semanticdb-project-database-file-157e5b3ede88
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157e5b3ede88"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157e5b5450c0"
+      :major-mode c-mode
+      :tags 
+        '( ("ctype.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("stdlib.h" include (:system-flag t) nil [39 58])
+            ("string.h" include (:system-flag t) nil [59 78])
+            ("errno.h" include (:system-flag t) nil [79 97])
+            ("sys/wait.h" include (:system-flag t) nil [98 119])
+            ("pwd.h" include (:system-flag t) nil [120 136])
+            ("unistd.h" include (:system-flag t) nil [137 156])
+            ("KNRM" variable (:constant-flag t) nil [166 170])
+            ("KRED" variable (:constant-flag t) nil [190 194])
+            ("KGRN" variable (:constant-flag t) nil [215 219])
+            ("KYEL" variable (:constant-flag t) nil [240 244])
+            ("KBLU" variable (:constant-flag t) nil [265 269])
+            ("KMAG" variable (:constant-flag t) nil [290 294])
+            ("KCYN" variable (:constant-flag t) nil [315 319])
+            ("KGRY" variable (:constant-flag t) nil [340 344])
+            ("KWHT" variable (:constant-flag t) nil [365 369])
+            ("SH_BUFFER_SIZE" variable (:constant-flag t) nil [391 405])
+            ("SH_TOKEN_BUFSIZE" variable (:constant-flag t) nil [419 435])
+            ("EXIT_SUCCESS" variable (:constant-flag t) nil [448 460])
+            ("EXIT_FAILURE" variable (:constant-flag t) nil [471 483])
+            ("sh_cd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [528 540]))                  
+                :type "int")
+                nil [518 541])
+            ("sh_help" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [554 566]))                  
+                :type "int")
+                nil [542 567])
+            ("sh_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [580 592]))                  
+                :type "int")
+                nil [568 593])
+            ("read_line" function
+               (:prototype-flag t
+                :pointer 1
+                :type "char")
+                nil [595 613])
+            ("split_line" function
+               (:prototype-flag t
+                :pointer 2
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [632 643]))                  
+                :type "char")
+                nil [614 644])
+            ("shell_loop" function
+               (:prototype-flag t
+                :type "void")
+                nil [645 663])
+            ("execute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [718 730]))                  
+                :type "int")
+                nil [706 731])
+            ("launch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [786 798]))                  
+                :type "int")
+                nil [775 799])
+            ("builtin_str" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{\"cd\", \"help\", \"exit\"}"
+                :type "char")
+                nil [801 846])
+            ("remove_trailing_whitespace" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [951 961]))                  
+                :type "void")
+                nil [912 1120])
+            ("num_builtins" function (:type "int") nil [1122 1189])
+            ("sh_cd" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1201 1213]))                  
+                :type "int")
+                nil [1191 1451])
+            ("sh_help" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1465 1477]))                  
+                :type "int")
+                nil [1453 1684])
+            ("sh_exit" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1698 1710]))                  
+                :type "int")
+                nil [1686 1724])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1735 1744])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1745 1757]))                  
+                :type "int")
+                nil [1726 1936])
+            ("trim" function
+               (:pointer 1
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1949 1960]))                  
+                :type "char")
+                nil [1938 2100])
+            ("shell_loop" function (:type "void") nil [2102 3051])
+            ("execute" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3065 3077]))                  
+                :type "int")
+                nil [3053 3502])
+            ("launch" function
+               (:arguments 
+                  ( ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3515 3527]))                  
+                :type "int")
+                nil [3504 4116])
+            ("read_line" function
+               (:pointer 1
+                :type "char")
+                nil [4118 4964])
+            ("split_line" function
+               (:pointer 2
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4984 4995]))                  
+                :type "char")
+                nil [4966 6568]))          
+      :file "main.c"
+      :pointmax 6570
+      :fsize 6569
+      :lastmodtime '(23673 31698 99975 571000)
+      :unmatched-syntax '((punctuation 909 . 910) (semantic-list 881 . 909) (punctuation 879 . 880) (semantic-list 869 . 878) (semantic-list 852 . 869) (INT 848 . 851))
+      :lexical-table 
+        '(("KWHT" . ((string "\"\\x1B[97m\"" 371 . 381)))
+          ("KYEL" . ((string "\"\\x1B[93m\"" 246 . 256)))
+          ("SH_TOKEN_BUFSIZE" . ((number "64" 436 . 438)))
+          ("KBLU" . ((string "\"\\x1B[94m\"" 271 . 281)))
+          ("KMAG" . ((string "\"\\x1B[95m\"" 296 . 306)))
+          ("KNRM" . ((string "\"\\x1B[0m\"" 172 . 181)))
+          ("KRED" . ((string "\"\\x1B[92m\"" 196 . 206)))
+          ("KCYN" . ((string "\"\\x1B[96m\"" 321 . 331)))
+          ("KGRY" . ((string "\"\\x1B[37m\"" 346 . 356)))
+          ("KGRN" . ((string "\"\\x1B[92m\"" 221 . 231)))
+          ("SH_BUFFER_SIZE" . ((number "1024" 406 . 410)))
+          ("EXIT_SUCCESS" . ((number "0" 461 . 462)))
+          ("EXIT_FAILURE" . ((number "1" 484 . 485)))
+          )
+))
+  :file "!home!jtarchalski!doorstuck!asbestOS!userspace!coreutils!ash!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

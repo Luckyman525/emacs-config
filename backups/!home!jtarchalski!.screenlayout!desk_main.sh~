@@ -1,0 +1,10 @@
+#!/bin/sh
+xrandr --output HDMI-0 --mode 1440x900 --rate 75 --pos 0x0 --rotate normal
+sleep 2
+xrandr --output DP-0 --primary --mode 1920x1080 --rate 60 --pos 1440x0 --rotate normal
+sleep 2
+xrandr --output DP-1 --off
+sleep 2
+xrandr --output eDP1 --mode 1920x1080_120.00 --pos 3360x0 --rotate normal
+sleep2
+xrandr--output VIRTUAL1 --off

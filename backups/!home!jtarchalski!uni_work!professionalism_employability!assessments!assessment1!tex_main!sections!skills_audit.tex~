@@ -1,0 +1,36 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+Level is rated out of 5: \\
+- 1 : not confident \\
+- 2 : a little confident \\
+- 3 : somewhat confident \\
+- 4 : quite confident \\
+- 5 : very confident \\
+\begin{itemize}
+  \item \textbf{Skill} - Problem Solving \\
+        \textbf{Level} - 3 \\
+        \textbf{Evidence} - Troubleshot a broken program on linux and fixed it \\
+        \textbf{How to Improve}	- Simulate problems I am not familiar with and attempt to solve them within a certain timeframe \\
+
+  \item \textbf{Skill} - Leadership \\
+        \textbf{Level} - 1 \\
+        \textbf{Evidence} - No experience in a leadership role \\
+        \textbf{How to Improve}	- Volunteer for leadership positions in group activities outside of university \\
+
+  \item \textbf{Skill} - Teamwork \\
+        \textbf{Level} - 2 \\
+        \textbf{Evidence} - Managed audio in a theater as part of a voluntary two-man team \\
+        \textbf{How to Improve} - Find a team based sport or volunteer for group based activities outside of university \\
+
+  \item \textbf{Skill} - Communication \\
+        \textbf{Level} - 2 \\
+        \textbf{Evidence} - No solid experience apart from a short presentation for GCSE English \\
+        \textbf{How to Improve} - Do presentations about topics I'm passionate about and gather feedback about how well I communicated \\
+
+  \item \textbf{Skill} - Programming \\
+        \textbf{Level} - 2 \\
+        \textbf{Evidence} - I can solve python problems rated at "Easy" and "Medium" difficulties on hackerrank.com and I can do a little bit of C programming which diversifies my programming skills \\
+        \textbf{How to Improve}	- Complete harder problems on hackerrank.com and read books about the programming languages I am interested in e.g "The C Programming Language" by Brian Kerninghan and Dennis Ritchie, or "C Programming: A Modern Approach" by K.N. King \\
+\end{itemize}
+\end{document}

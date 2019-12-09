@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file-15716f7b6abc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15716f7b6abc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15716f1be998"
+      :major-mode c-mode
+      :tags 
+        '( ("dactyl-manuform.h" include nil nil [1 29])
+            ("action_layer.h" include nil nil [30 55])
+            ("eeconfig.h" include nil nil [56 77])
+            ("keymap_config" variable
+               (:typemodifiers ("extern")
+                :type ("keymap_config_t" type (:type "class") nil nil))
+                nil [79 116])
+            ("_QWERTY" variable (:constant-flag t) nil [438 445])
+            ("_FN" variable (:constant-flag t) nil [456 459])
+            ("_______" variable (:constant-flag t) nil [512 519])
+            ("XXXXXXX" variable (:constant-flag t) nil [536 543])
+            ("keymaps" variable
+               (:dereference 3
+                :default-value "{
+[_QWERTY] = KEYMAP_5x6(
+  // left hand
+   KC_ESC,    KC_1,    KC_2,    KC_3,   KC_4,   KC_5, 
+   KC_GRV,    KC_Q,    KC_W,    KC_E,   KC_R,   KC_T,
+   KC_TAB,    KC_A,    KC_S,    KC_D,   KC_F,   KC_G,
+   KC_LSHIFT, KC_Z,    KC_X,    KC_C,   KC_V,   KC_B,
+                       KC_TAB,  KC_BSLS,
+                               LT(_FN, KC_DEL), KC_LSFT, 
+                               KC_SPC,   KC_LCTRL,
+                               KC_ENTER, KC_LALT,
+        // right hand
+                     KC_6,    KC_7,   KC_8,    KC_9,    KC_0,    KC_MINS,
+                     KC_Y,    KC_U,   KC_I,    KC_O,    KC_P,    KC_EQL,
+                     KC_H,    KC_J,   KC_K,    KC_L,    KC_SCLN, KC_QUOT, 
+                     KC_N,    KC_M,   KC_COMM, KC_DOT,  KC_SLSH, KC_RSHIFT,
+                                      KC_LBRC, KC_RBRC,
+        KC_SPC, LT(_FN, KC_BSPC), 
+        CTL_T(KC_PGUP), KC_PGDN,
+        KC_LALT, KC_LGUI),
+[_FN] = KEYMAP_5x6(
+  // left hand
+   _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5, 
+   _______,  _______,  KC_HOME,  KC_UP,    KC_END,   KC_PGUP,
+   _______,  _______,  KC_LEFT,  KC_DOWN,  KC_RIGHT, KC_PGDN,
+   RESET,    _______,  _______,  _______,  _______,  _______,
+                       _______,  _______, 
+                               LT(_FN, KC_DEL), KC_LSFT, 
+                               KC_SPC,   KC_LCTRL,
+                               KC_ENTER, KC_LALT,
+        // right hand
+                     KC_F6,    KC_F7,    KC_F8,    KC_F9,     KC_F10,  KC_F11,
+                     KC_PGUP,  KC_HOME,  KC_UP,    KC_END,   _______,  KC_F12,
+                     KC_PGDN,  KC_LEFT,  KC_DOWN,  KC_RIGHT, _______, _______,
+                     KC_CALC,  KC_MAIL,  KC_MYCM,  KC_WHOM,  _______,   RESET,
+                                         _______,  _______,
+        KC_SPC, LT(_FN, KC_BSPC), 
+        CTL_T(KC_PGUP), KC_PGDN,
+        KC_LALT, KC_LGUI),
+}"
+                :type ("PROGMEM" type (:type "class") nil nil))
+                nil [566 2520])
+            ("persistant_default_layer_set" function
+               (:arguments 
+                  ( ("default_layer" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2558 2581]))                  
+                :type "void")
+                nil [2524 2669]))          
+      :file "keymap.c"
+      :pointmax 2670
+      :fsize 2669
+      :lastmodtime '(23499 40362 343294 783000)
+      :unmatched-syntax '((symbol 557 . 565) (CONST 551 . 556))
+      :lexical-table 
+        '(("_______" . ((symbol "KC_TRNS" 520 . 527)))
+          ("_QWERTY" . ((number "0" 446 . 447)))
+          ("XXXXXXX" . ((symbol "KC_NO" 544 . 549)))
+          ("_FN" . ((number "1" 462 . 463)))
+          )
+))
+  :file "!home!jtarchalski!keebs!qmk_dactyl-manuform!keyboards!dactyl-manuform!keymaps!5x6-default!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

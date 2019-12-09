@@ -1,0 +1,14 @@
+origMessage = input("message to be encoded: ")
+
+height = int(input("height: "))
+
+encodedMessage = ""
+
+count = 0
+
+while count < height :
+    rfEncode = origMessage[ count : : height ]
+    encodedMessage += rfEncode
+    count += 1
+
+print(encodedMessage)

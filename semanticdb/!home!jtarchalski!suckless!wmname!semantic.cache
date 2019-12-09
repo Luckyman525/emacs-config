@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file-158ea67d292c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-158ea67d292c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-158ea6074114"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("VERSION" variable (:default-value ("0.2")) nil [18 32])
+            ("PREFIX" variable (:default-value ("/usr/local")) nil [79 99])
+            ("MANPREFIX" variable (:default-value ("${PREFIX}/share/man")) nil [99 131])
+            ("X11INC" variable (:default-value ("/usr/X11R6/include")) nil [132 160])
+            ("X11LIB" variable (:default-value ("/usr/X11R6/lib")) nil [160 184])
+            ("INCS" variable (:default-value ("-I." "-I/usr/include" "-I${X11INC}")) nil [205 243])
+            ("LIBS" variable (:default-value ("-L/usr/lib" "-lc" "-L${X11LIB}" "-lX11")) nil [243 283])
+            ("CPPFLAGS" variable (:default-value ("-DVERSION=\\\"${VERSION}\\\"")) nil [292 328])
+            ("CFLAGS" variable (:default-value ("-std=c99" "-pedantic" "-Wall" "-Os" "${INCS}" "${CPPFLAGS}")) nil [328 386])
+            ("LDFLAGS" variable (:default-value ("-s" "${LIBS}")) nil [386 407])
+            ("CC" variable (:default-value ("cc")) nil [430 438])
+            ("LD" variable (:default-value ("${CC}")) nil [438 449]))          
+      :file "config.mk"
+      :pointmax 449
+      :fsize 448
+      :lastmodtime '(23677 40794 109797 433000)
+      :unmatched-syntax nil))
+  :file "!home!jtarchalski!suckless!wmname!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,35 @@
+xsetwacom set "Wacom Intuos S Pen stylus" MapToOutput 1728x1080+1440+0
+xsetwacom set "Wacom Intuos S Pen stylus" "Area" "0 0 15200 9500"
+xsetwacom set "Wacom Intuos S Pen stylus" "Button" "1" "button +1 "
+xsetwacom set "Wacom Intuos S Pen stylus" "Button" "2" "button +2 "
+xsetwacom set "Wacom Intuos S Pen stylus" "Button" "3" "button +3 "
+xsetwacom set "Wacom Intuos S Pen stylus" "Button" "8" "button +8 "
+xsetwacom set "Wacom Intuos S Pen stylus" "ToolDebugLevel" "0"
+xsetwacom set "Wacom Intuos S Pen stylus" "TabletDebugLevel" "0"
+xsetwacom set "Wacom Intuos S Pen stylus" "Suppress" "2"
+xsetwacom set "Wacom Intuos S Pen stylus" "RawSample" "4"
+xsetwacom set "Wacom Intuos S Pen stylus" "PressureCurve" "0 0 100 100"
+xsetwacom set "Wacom Intuos S Pen stylus" "Mode" "Absolute"
+xsetwacom set "Wacom Intuos S Pen stylus" "TabletPCButton" "off"
+xsetwacom set "Wacom Intuos S Pen stylus" "Touch" "off"
+Property 'Wacom Hardware Touch Switch' does not exist on device.
+xsetwacom set "Wacom Intuos S Pen stylus" "Gesture" "off"
+xsetwacom set "Wacom Intuos S Pen stylus" "ZoomDistance" "0"
+xsetwacom set "Wacom Intuos S Pen stylus" "ScrollDistance" "0"
+xsetwacom set "Wacom Intuos S Pen stylus" "TapTime" "260"
+Property 'Wacom Proximity Threshold' does not exist on device.
+xsetwacom set "Wacom Intuos S Pen stylus" "Rotate" "none"
+Property 'Wacom Wheel Buttons' does not exist on device.
+Property 'Wacom Wheel Buttons' does not exist on device.
+Property 'Wacom Wheel Buttons' does not exist on device.
+Property 'Wacom Wheel Buttons' does not exist on device.
+Property 'Wacom Wheel Buttons' does not exist on device.
+Property 'Wacom Wheel Buttons' does not exist on device.
+Property 'Wacom Strip Buttons' does not exist on device.
+Property 'Wacom Strip Buttons' does not exist on device.
+Property 'Wacom Strip Buttons' does not exist on device.
+Property 'Wacom Strip Buttons' does not exist on device.
+xsetwacom set "Wacom Intuos S Pen stylus" "Threshold" "26"
+xsetwacom set "Wacom Intuos S Pen stylus" "BindToSerial" "0"
+xsetwacom set "Wacom Intuos S Pen stylus" "PressureRecalibration" "on"
+xsetwacom set "Wacom Intuos S Pen stylus" "PanScrollThreshold" "1300"

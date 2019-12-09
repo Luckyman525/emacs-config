@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#define IN 1 /* inside a word */
+#define OUT 0 /* outside of a word */
+
+/* barebones version of the linux wc program */
+
+int main() {
+  int c, s, nl, nw, nc, state;
+
+  state = OUT;
+  nw = nc = 0;
+  nl = 0;
+  s = '\n';
+  while ((c = getchar()) != '\n')  {
+    ++nc;
+    if (c == '\n')  {
+      ++nl;
+    }
+    if (c == ' ' || c == '\n' || c == '\t')  {
+      state = OUT;
+      s = '\n';
+    }
+    else if (state == OUT)  {
+      state = IN;
+      ++nw;
+      s = c;
+    }
+    else if (c != ' ' || c != '\n' || c != '\t')  {
+      s = c;
+    }
+    putchar(s);
+   }
+  printf("\n\nnewlines\t   words\t   chars\n");
+  printf("%8d\t%8d\t%8d\n", nl, nw, nc);
+}

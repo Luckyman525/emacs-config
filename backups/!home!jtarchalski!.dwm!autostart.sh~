@@ -1,0 +1,62 @@
+#!/bin/bash
+
+#xrandr --output eDP1 --mode "1920x1080_120.00" &
+
+#exec /home/jtarchalski/.screenlayout/tv_RofLaptop.sh &
+
+exec /home/jtarchalski/.screenlayout/desk_main.sh &
+
+compton --config /home/jtarchalski/.config/compton.conf &
+
+setxkbmap gb &
+
+sleep 2
+
+#exec cadence &
+
+exec /home/jtarchalski/.dwm/scripts/audio/soundcardstart.sh &
+
+exec discord &
+
+feh --bg-fill /home/jtarchalski/wallpapers/default.jpg &
+
+dunst --config /home/jtarchalski/.config/dunst/dunstrc &
+
+####################################################################################################
+
+
+dte() {
+	dte="$(date +"%T %d-%m-%Y")"
+	printf "$dte"
+}
+
+home() {
+    home=`df -h | awk '{ if ($6 == "/home") print $4 }'`
+	printf "/home:$home"
+}
+
+root() {
+	root=`df -h | awk '{ if ($6 == "/") print $4 }'`
+    printf "/:$root "
+}
+
+vol() {
+    vol=`/home/jtarchalski/.dwm/scripts/i3blocks-contrib/volume/volume`
+    printf "🔊$vol\b"
+}
+
+bat() {
+	bat=`acpi | awk '{if ($1 == "Battery") print $4}'`
+	printf "🔋$bat\b%%"
+}
+
+essid() {
+	essid=`/home/jtarchalski/.dwm/scripts/i3blocks-contrib/essid/essid | `
+	printf "$essid"
+}
+
+
+while true; do
+	xsetroot -fg green -name "$(vol) | $(root) $(home) | $(dte) | $(bat)"
+    sleep 0.1s
+done &

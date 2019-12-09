@@ -1,0 +1,348 @@
+;; Object semanticdb-project-database-file-1576b60bd928
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1576b60bd928"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1576b61fdee8"
+      :major-mode c-mode
+      :tags nil
+      :file "config.h"
+      :pointmax 7470
+      :fsize 7469
+      :lastmodtime '(23696 3512 683172 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1576b62b2754"
+      :major-mode c-mode
+      :tags 
+        '( ("sxiv.h" include nil nil [708 725])
+            ("_IMAGE_CONFIG" variable (:constant-flag t) nil [734 747])
+            ("config.h" include nil nil [748 767])
+            ("stdlib.h" include (:system-flag t) nil [769 788])
+            ("string.h" include (:system-flag t) nil [789 808])
+            ("unistd.h" include (:system-flag t) nil [809 828])
+            ("sys/wait.h" include (:system-flag t) nil [829 850])
+            ("remove_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [869 873])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [874 879]))                  
+                :type "void")
+                nil [852 880])
+            ("load_image" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [897 901]))                  
+                :type "void")
+                nil [881 902])
+            ("mark_image" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [919 923])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [924 929]))                  
+                :type "bool")
+                nil [903 930])
+            ("close_info" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [947 952]))                  
+                :type "void")
+                nil [931 953])
+            ("open_info" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [969 974]))                  
+                :type "void")
+                nil [954 975])
+            ("ptr_third_x" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [992 997]))                  
+                :type "int")
+                nil [976 998])
+            ("redraw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1011 1016]))                  
+                :type "void")
+                nil [999 1017])
+            ("reset_cursor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1036 1041]))                  
+                :type "void")
+                nil [1018 1042])
+            ("animate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1056 1061]))                  
+                :type "void")
+                nil [1043 1062])
+            ("slideshow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1078 1083]))                  
+                :type "void")
+                nil [1063 1084])
+            ("set_timeout" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timeout_f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1102 1112])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1113 1117])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1118 1123]))                  
+                :type "void")
+                nil [1085 1124])
+            ("reset_timeout" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timeout_f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1144 1154]))                  
+                :type "void")
+                nil [1125 1155])
+            ("mode" variable
+               (:typemodifiers ("extern")
+                :type ("appmode_t" type (:type "class") nil nil))
+                nil [1157 1179])
+            ("img" variable
+               (:typemodifiers ("extern")
+                :type ("img_t" type (:type "class") nil nil))
+                nil [1180 1197])
+            ("tns" variable
+               (:typemodifiers ("extern")
+                :type ("tns_t" type (:type "class") nil nil))
+                nil [1198 1215])
+            ("win" variable
+               (:typemodifiers ("extern")
+                :type ("win_t" type (:type "class") nil nil))
+                nil [1216 1233])
+            ("files" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("fileinfo_t" type (:type "class") nil nil))
+                nil [1235 1260])
+            ("filecnt" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1261 1289])
+            ("fileidx" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1261 1289])
+            ("alternate" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1290 1311])
+            ("markcnt" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1312 1331])
+            ("markidx" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1332 1351])
+            ("prefix" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1353 1371])
+            ("extprefix" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [1372 1394])
+            ("cg_quit" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1409 1417]))                  
+                :type "bool")
+                nil [1396 1611])
+            ("cg_switch_mode" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1633 1641]))                  
+                :type "bool")
+                nil [1613 1993])
+            ("cg_toggle_fullscreen" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2021 2029]))                  
+                :type "bool")
+                nil [1995 2258])
+            ("cg_toggle_bar" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2279 2287]))                  
+                :type "bool")
+                nil [2260 2484])
+            ("cg_prefix_external" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2510 2518]))                  
+                :type "bool")
+                nil [2486 2556])
+            ("cg_reload_image" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2579 2587]))                  
+                :type "bool")
+                nil [2558 2810])
+            ("cg_remove_image" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2833 2841]))                  
+                :type "bool")
+                nil [2812 2962])
+            ("cg_first" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2978 2986]))                  
+                :type "bool")
+                nil [2964 3194])
+            ("cg_n_or_last" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3214 3222]))                  
+                :type "bool")
+                nil [3196 3504])
+            ("cg_scroll_screen" function
+               (:arguments 
+                  ( ("dir" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3528 3538]))                  
+                :type "bool")
+                nil [3506 3644])
+            ("cg_zoom" function
+               (:arguments 
+                  ( ("d" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3659 3667]))                  
+                :type "bool")
+                nil [3646 3837])
+            ("cg_toggle_image_mark" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3865 3873]))                  
+                :type "bool")
+                nil [3839 3941])
+            ("cg_reverse_marks" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3965 3973]))                  
+                :type "bool")
+                nil [3943 4158])
+            ("cg_mark_range" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4179 4187]))                  
+                :type "bool")
+                nil [4160 4404])
+            ("cg_unmark_all" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4425 4433]))                  
+                :type "bool")
+                nil [4406 4580])
+            ("cg_navigate_marked" function
+               (:arguments 
+                  ( ("n" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4606 4614]))                  
+                :type "bool")
+                nil [4582 5003])
+            ("cg_change_gamma" function
+               (:arguments 
+                  ( ("d" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5026 5034]))                  
+                :type "bool")
+                nil [5005 5191])
+            ("ci_navigate" function
+               (:arguments 
+                  ( ("n" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5210 5218]))                  
+                :type "bool")
+                nil [5193 5411])
+            ("ci_cursor_navigate" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5437 5445]))                  
+                :type "bool")
+                nil [5413 5489])
+            ("ci_alternate" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5509 5517]))                  
+                :type "bool")
+                nil [5491 5559])
+            ("ci_navigate_frame" function
+               (:arguments 
+                  ( ("d" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5584 5592]))                  
+                :type "bool")
+                nil [5561 5687])
+            ("ci_toggle_animation" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5714 5722]))                  
+                :type "bool")
+                nil [5689 6009])
+            ("ci_scroll" function
+               (:arguments 
+                  ( ("dir" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6026 6036]))                  
+                :type "bool")
+                nil [6011 6076])
+            ("ci_scroll_to_edge" function
+               (:arguments 
+                  ( ("dir" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6101 6111]))                  
+                :type "bool")
+                nil [6078 6148])
+            ("ci_drag" function
+               (:arguments 
+                  ( ("mode" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6163 6174]))                  
+                :type "bool")
+                nil [6150 7151])
+            ("ci_set_zoom" function
+               (:arguments 
+                  ( ("zl" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7170 7179]))                  
+                :type "bool")
+                nil [7153 7239])
+            ("ci_fit_to_win" function
+               (:arguments 
+                  ( ("sm" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7260 7269]))                  
+                :type "bool")
+                nil [7241 7304])
+            ("ci_rotate" function
+               (:arguments 
+                  ( ("degree" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7321 7334]))                  
+                :type "bool")
+                nil [7306 7379])
+            ("ci_flip" function
+               (:arguments 
+                  ( ("dir" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7394 7404]))                  
+                :type "bool")
+                nil [7381 7444])
+            ("ci_toggle_antialias" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7471 7479]))                  
+                :type "bool")
+                nil [7446 7526])
+            ("ci_toggle_alpha" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7549 7557]))                  
+                :type "bool")
+                nil [7528 7619])
+            ("ci_slideshow" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7639 7647]))                  
+                :type "bool")
+                nil [7621 7893])
+            ("ct_move_sel" function
+               (:arguments 
+                  ( ("dir" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7912 7922]))                  
+                :type "bool")
+                nil [7895 7973])
+            ("ct_reload_all" function
+               (:arguments 
+                  ( ("_" variable (:type ("arg_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7994 8002]))                  
+                :type "bool")
+                nil [7975 8106])
+            ("G_CMD" variable (:constant-flag t) nil [8131 8136])
+            ("I_CMD" variable (:constant-flag t) nil [8178 8183])
+            ("T_CMD" variable (:constant-flag t) nil [8233 8238])
+            ("cmds" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{
+#include \"commands.lst\"
+}"
+                :type ("cmd_t" type (:type "class") nil nil))
+                nil [8267 8325]))          
+      :file "commands.c"
+      :pointmax 8327
+      :fsize 8326
+      :lastmodtime '(23696 2886 429846 238000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("G_CMD" (spp-arg-list ("c") 8136 . 8139) . ((semantic-list "{ -1, cg_##c }" 8140 . 8154) (punctuation "," 8154 . 8155)))
+          ("T_CMD" (spp-arg-list ("c") 8238 . 8241) . ((semantic-list "{ MODE_THUMB, ct_##c }" 8242 . 8264) (punctuation "," 8264 . 8265)))
+          ("_IMAGE_CONFIG")
+          ("I_CMD" (spp-arg-list ("c") 8183 . 8186) . ((semantic-list "{ MODE_IMAGE, ci_##c }" 8187 . 8209) (punctuation "," 8209 . 8210)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1576b62e34ac"
+      :file "sxiv.h"
+      :fsize 7794
+      :lastmodtime '(23696 2886 433179 571000)))
+  :file "!home!jtarchalski!suckless!sxiv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

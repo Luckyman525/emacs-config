@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+#define TAB 4
+
+
+int main() {
+	int count, tabs, blanks;
+
+	while ((c = getchar()) != EOF) {
+		count = 0;
+		if (c == ' ') {
+			count++;
+
+		}
+	}
+}

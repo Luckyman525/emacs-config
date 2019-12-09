@@ -1,0 +1,2 @@
+#!bin/bash
+exec ~/.local/share/PrusaSlicer-2.1.0+linux64-201909160925/prusa-slicer

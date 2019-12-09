@@ -1,0 +1,13 @@
+#!/bin/bash
+first="$1"
+
+declare -i current_page=$first
+
+while [ 1 ]; do
+	echo "deleting $current_page"
+	rm "$current_page"
+	current_page=$current_page+1
+	if [ $? -ne 0 ]; then
+        echo "Cleaning entire folder!"
+    fi
+done

@@ -1,0 +1,2 @@
+;;; Generated package description from /home/jtarchalski/.emacs.d/elpa/libmpdel-0.7.0/libmpdel.el  -*- no-byte-compile: t -*-
+(define-package "libmpdel" "0.7.0" "Communication with an MPD server" '((emacs "25.1")) :commit "fcc719c2f23df4b5838eab76a40fef11055203de" :keywords '("multimedia") :authors '(("Damien Cassou" . "damien@cassou.me")) :maintainer '("Damien Cassou" . "damien@cassou.me") :url "https://gitlab.petton.fr/mpdel/libmpdel")

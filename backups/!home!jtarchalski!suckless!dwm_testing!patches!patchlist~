@@ -1,0 +1,48 @@
+currently applied: [patch name] // [file name]
+
+alpha // dwm-alpha-20180613-b69c870.diff || yes
+attachbottom // dwm-attachbottom-6.1.diff || no
+autostart // dwm-autostart-20161205-bb3bd6f.diff || yes
+cyclelayouts // dwm-cyclelayouts-20180524-6.2.diff || yes
+deck // dwm-deck-6.0.diff || yes
+fancybar // dwm-fancybar-2019018-b69c870.diff || no
+fibonacci // dwm-fibonacci-5.8.2.diff || yes
+hide_vacant_tags // dwm-hide_vacant_tags-git-20160626-7af4d43.diff || no
+pertag // dwm-pertag-20170513-ceac8c9.diff || yes
+rotatestack || no
+selfrestart || no
+smfacts // dwm-6.0-smfact.diff || yes
+three column layout // tcl.c || yes
+warp // dwm-warp-git-20160626-7af4d43.diff || yes
+zoomswap // dwm-zoomswap-20160731-56a31dc.diff || yes(updated)
+
+--------------------------------
+CHANGELOG
+--------------------------------
+tbd: [patch name] // [file name]
+
+alternativetags // dwm-alternativetags-6.2.diff || yes
+attachbelow // dwm-attachbelow-6.2.diff || yes
+focusonclick // dwm-focusonclick-20171030-6aa8e37.diff || yes
+keycodes // dwm-keycodes-20170511-ceac8c9.diff || maybe
+leftlayout // dwm-leftlayout-20180524-c8e9479.diff || yes
+mark // dwm-mark-new-6.1.diff || maybe
+movestack // dwm-movestack-6.1.diff || yes
+scratchpad // dwm-scratchpad-20190620-cb3f58a.diff || maybe
+sticky // dwm-sticky-6.1.diff || maybe
+swapfocus // dwm-swapfocus-6.2.diff || maybe
+systray // dwm-systray-20190208-cb3f58a.diff || maybe
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+remove: 
+
+selfrestart
+rotatestack
+attachbottom
+fancybar
+hide_vacant_tags
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+updates: [patch name] // [file]
+
+zoomswap // dwm-zoomswap-6.2.diff || applied

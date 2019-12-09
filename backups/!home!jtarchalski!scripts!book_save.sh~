@@ -1,0 +1,16 @@
+#!/bin/bash
+book_url="$1"
+book_name="$2"
+declare -i current_page=1
+
+mkdir $book_name
+pushd $book_name
+while [ 1 ]; do
+    echo "Downloading page $current_page"
+    wget -q "$book_url-$(printf "%03d" $current_page).jpg" -O "$current_page.jpg"
+    current_page=$current_page+1
+    if [ $? -ne 0 ]; then
+        break
+    fi
+done
+popd

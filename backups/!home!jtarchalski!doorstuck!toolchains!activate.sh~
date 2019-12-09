@@ -1,0 +1,6 @@
+#!/bin/bash
+root_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo "$root_dir"
+export
+PATH="$root_dir/arm-eabi/bin:$root_dir/i386-pc-magenta/bin:$root_dir/x86_64-pc-magenta/bin:$PATH"
+

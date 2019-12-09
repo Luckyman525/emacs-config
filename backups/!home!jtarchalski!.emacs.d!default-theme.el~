@@ -1,0 +1,8 @@
+(deftheme default
+  "Created 2019-02-04.")
+
+(custom-theme-set-variables
+ 'default
+ '(custom-safe-themes '("d8dc153c58354d612b2576fea87fe676a3a5d43bcc71170c62ddde4a1ad9e1fb" default)))
+
+(provide-theme 'default)

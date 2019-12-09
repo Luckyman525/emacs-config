@@ -1,0 +1,7 @@
+#!/bin/bash
+
+status=`ps aux| grep jack | awk '{ if ($11 == "/usr/bin/jackdbus") print "jack is running"}'`
+
+if $status = "jack is running";
+   exec cadence &
+fi

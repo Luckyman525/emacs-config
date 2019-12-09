@@ -1,0 +1,2 @@
+# Load snd_hda_codec_nvhdmi modules for hdmi audio with nvidia cards
+snd_hda_codec_nvhdmi

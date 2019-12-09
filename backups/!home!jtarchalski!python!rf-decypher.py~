@@ -1,0 +1,16 @@
+encodedMessage = input("encoded message: ")
+
+fence = int(input("height: "))
+
+origMessage = ""
+
+count = 0
+
+shift = int(len(encodedMessage) / fence)
+
+while count < shift :
+    rfDecode = encodedMessage[count : : shift ]
+    origMessage += rfDecode
+    count += 1
+
+print(origMessage)

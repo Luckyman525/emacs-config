@@ -1,0 +1,22 @@
+currently applied: [patch name] // [file name]
+
+anysize // st-anysize-0.8.1.diff
+boxdraw // st-boxdraw_v2-0.8.2.diff
+iso14755 // st-iso14755-20180911-67d0cb6.diff
+scrollback // st-scrollback-20190122-3be4cf1.diff
+scrollback-mouse // st-scrollback-mouse-0.8.diff
+scrollback-mouse-altscreen // st-scrollback-mouse-altscreen-20190131-e23acb9.diff
+
+--------------------------------
+CHANGELOG
+--------------------------------
+tbd: [patch name] // [file name]
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+remove: 
+
+alpha // st-alpha-20190116-3be4cf1.diff
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+updates: [patch name] // [file]

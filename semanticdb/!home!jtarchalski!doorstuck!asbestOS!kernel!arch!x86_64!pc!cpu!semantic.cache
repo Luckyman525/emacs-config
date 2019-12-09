@@ -1,0 +1,391 @@
+;; Object semanticdb-project-database-file-1577c31d0308
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1577c31d0308"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1577c31d0324"
+      :major-mode c-mode
+      :tags 
+        '( ("magenta/magenta.h" include (:system-flag t) nil [1 29])
+            ("magenta/panic.h" include (:system-flag t) nil [30 56])
+            ("platform/interrupt.h" include (:system-flag t) nil [57 88])
+            ("platform/io.h" include (:system-flag t) nil [89 113])
+            ("stddef.h" include (:system-flag t) nil [114 133])
+            ("string.h" include (:system-flag t) nil [134 153])
+            ("SYSCALL_VECTOR" variable (:constant-flag t) nil [163 177])
+            ("idt_entry" type
+               (:members 
+                  ( ("base_low" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [207 225])
+                    ("selector" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [230 248])
+                    ("always0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [253 269])
+                    ("type" variable
+                       (:suffix ":4"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [274 291])
+                    ("zero" variable
+                       (:suffix ":1"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [296 313])
+                    ("dpl" variable
+                       (:suffix ":2"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [318 334])
+                    ("present" variable
+                       (:suffix ":1"
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [339 359])
+                    ("base_middle" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [364 385])
+                    ("base_high" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [390 409])
+                    ("reserved" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [414 432]))                  
+                :type "struct")
+                nil [184 459])
+            ("idt" type
+               (:members 
+                  ( ("limit" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [478 493])
+                    ("base" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [498 512]))                  
+                :type "struct")
+                nil [461 539])
+            ("_isr0" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [541 561])
+            ("_isr1" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [562 582])
+            ("_isr2" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [583 603])
+            ("_isr3" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [604 624])
+            ("_isr4" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [625 645])
+            ("_isr5" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [646 666])
+            ("_isr6" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [667 687])
+            ("_isr7" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [688 708])
+            ("_isr8" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [709 729])
+            ("_isr9" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [730 750])
+            ("_isr10" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [751 772])
+            ("_isr11" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [773 794])
+            ("_isr12" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [795 816])
+            ("_isr13" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [817 838])
+            ("_isr14" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [839 860])
+            ("_isr15" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [861 882])
+            ("_isr16" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [883 904])
+            ("_isr17" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [905 926])
+            ("_isr18" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [927 948])
+            ("_isr19" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [949 970])
+            ("_isr20" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [971 992])
+            ("_isr21" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [993 1014])
+            ("_isr22" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1015 1036])
+            ("_isr23" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1037 1058])
+            ("_isr24" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1059 1080])
+            ("_isr25" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1081 1102])
+            ("_isr26" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1103 1124])
+            ("_isr27" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1125 1146])
+            ("_isr28" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1147 1168])
+            ("_isr29" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1169 1190])
+            ("_isr30" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1191 1212])
+            ("_isr31" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1213 1234])
+            ("_isr128" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1235 1257])
+            ("_irq0" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1259 1279])
+            ("_irq1" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1280 1300])
+            ("_irq2" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1301 1321])
+            ("_irq3" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1322 1342])
+            ("_irq4" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1343 1363])
+            ("_irq5" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1364 1384])
+            ("_irq6" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1385 1405])
+            ("_irq7" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1406 1426])
+            ("_irq8" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1427 1447])
+            ("_irq9" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1448 1468])
+            ("_irq10" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1469 1490])
+            ("_irq11" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1491 1512])
+            ("_irq12" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1513 1534])
+            ("_irq13" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1535 1556])
+            ("_irq14" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1557 1578])
+            ("_irq15" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [1579 1600])
+            ("current_idt" variable
+               (:typemodifiers ("static")
+                :type ("idt" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1602 1632])
+            ("idt_entries" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("idt_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1633 1674])
+            ("service_handlers" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{NULL}"
+                :type ("interrupt_handler" type (:type "class") nil nil))
+                nil [1675 1731])
+            ("request_handlers" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{NULL}"
+                :type ("interrupt_handler" type (:type "class") nil nil))
+                nil [1732 1788])
+            ("flush_idt" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1790 1966])
+            ("set_gate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("index" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1989 2003])
+                    ("base" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2004 2019])
+                    ("sel" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2020 2033])
+                    ("flags" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2055 2069]))                  
+                :type "void")
+                nil [1968 2533])
+            ("gpf_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("cpu_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2559 2584]))                  
+                :type "void")
+                nil [2535 2830])
+            ("interrupt_initialise" function (:type "void") nil [2832 5826])
+            ("interrupt_register_service_handler" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [5868 5878])
+                    ("h" variable (:type ("interrupt_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5879 5899]))                  
+                :type "void")
+                nil [5828 5999])
+            ("interrupt_register_request_handler" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [6041 6051])
+                    ("h" variable (:type ("interrupt_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6052 6072]))                  
+                :type "void")
+                nil [6001 6179])
+            ("service_dispatch" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("cpu_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6203 6228]))                  
+                :type "void")
+                nil [6181 6440])
+            ("request_dispatch" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("cpu_context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6464 6489]))                  
+                :type "void")
+                nil [6442 6689]))          
+      :file "interrupt.c"
+      :pointmax 6690
+      :fsize 6689
+      :lastmodtime '(23657 47836 323282 83000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SYSCALL_VECTOR" . ((number "0x80" 177 . 181)))
+          )
+))
+  :file "!home!jtarchalski!doorstuck!asbestOS!kernel!arch!x86_64!pc!cpu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

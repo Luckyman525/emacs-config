@@ -1,0 +1,26 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/h34d3r/qmk_firmware.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "dactyl-manuform"]
+	remote = origin
+	merge = refs/heads/dactyl-manuform
+[submodule "lib/chibios"]
+	active = true
+	url = https://github.com/ChibiOS/ChibiOS.git
+[submodule "lib/chibios-contrib"]
+	active = true
+	url = https://github.com/ChibiOS/ChibiOS-Contrib.git
+[submodule "lib/googletest"]
+	active = true
+	url = https://github.com/google/googletest
+[submodule "lib/ugfx"]
+	active = true
+	url = https://bitbucket.org/Tectu/ugfx

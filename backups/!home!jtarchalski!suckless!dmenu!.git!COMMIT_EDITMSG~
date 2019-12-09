@@ -1,0 +1,33 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+#	modified:   dmenu.c
+#
+# Changes not staged for commit:
+#	modified:   config.def.h
+#	modified:   config.mk
+#	modified:   dmenu.1
+#
+# Untracked files:
+#	config.h
+#	config.mk.orig
+#	config.mk.rej
+#	dmenu
+#	dmenu-fuzzymatch-20170603-f428f3e.diff
+#	dmenu-lineheight-4.7.diff
+#	dmenu-password-4.7.diff
+#	dmenu.c.orig
+#	dmenu.c.rej
+#	dmenu.o
+#	drw.o
+#	scripts/
+#	stest
+#	stest.o
+#	util.o
+#

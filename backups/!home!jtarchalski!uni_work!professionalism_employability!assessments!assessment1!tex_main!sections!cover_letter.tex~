@@ -1,0 +1,20 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+\noindent
+Dear Recruitment Drone, \\
+\indent
+I am writing to you to express my interest in your Cyber Security Sandwich Placement for undergraduates.
+It is my understanding that you are the European leader providing aircraft for a number of aeronautics, space and related solutions. I've always had an interest in security technology and I yearn to develop my skills as much as possible. Please find attached my CV for your review. \\
+
+I have very minimal experience. However, I know I have what it takes to work with others at the forefront of security focused research. In my free time I have also been completing an introductory online course on penetration testing and improving my programming skills in Python and C with the help of hackerrank.com. \\
+
+I also understand you are looking for good problem solving skills. For the past two years I have used GNU/Linux as my main operating system which has allowed me to learn how to troubleshoot some programs using a combination of kernel logs, manual pages and the internet. \\
+
+I would be grateful to meet and discuss the skills that I can bring to the cyber security team. I can be reached by telephone on +447525341522 and email on jakub.tarchalski@gmail.com \\
+
+Thank you for your time and I hope to hear from you promptly. \\
+
+Yours sincerly, \\
+Jakub Tarchaslki \\
+\end{document}

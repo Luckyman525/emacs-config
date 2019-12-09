@@ -1,0 +1,14 @@
+/etc/optimus-manager/optimus-manager.conf
+/etc/optimus-manager/#optimus-manager.conf#
+/etc/optimus-manager/xsetup-nvidia.sh
+/etc/optimus-manager/#xsetup-nvidia.sh#
+/etc/optimus-manager/xsetup-intel.sh
+/etc/optimus-manager/#xsetup-intel.sh#
+/etc/optimus-manager/nvidia-disable.sh
+/etc/optimus-manager/#nvidia-disable.sh#
+/etc/optimus-manager/nvidia-enable.sh
+/etc/optimus-manager/#nvidia-enable.sh#
+/etc/optimus-manager/xorg-intel.conf
+/etc/optimus-manager/#xorg-intel.conf#
+/etc/optimus-manager/xorg-nvidia.conf
+/etc/optimus-manager/#xorg-nvidia.conf#

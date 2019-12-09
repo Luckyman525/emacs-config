@@ -1,0 +1,10 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+\title{Assignment 1b}
+\author{Jakub Tarchalski}
+
+\begin{document}
+This is a test
+Test
+\end{document}

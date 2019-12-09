@@ -1,0 +1,209 @@
+;; Object semanticdb-project-database-file-155a0d1668c0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155a0d1668c0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155a0d166840"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NAME" variable (:default-value ("dwmstatus")) nil [1 18])
+            ("VERSION" variable (:default-value ("1.0")) nil [18 32])
+            ("PREFIX" variable (:default-value ("/usr")) nil [79 93])
+            ("MANPREFIX" variable (:default-value ("${PREFIX}/share/man")) nil [93 125])
+            ("X11INC" variable (:default-value ("/usr/X11R6/include")) nil [126 154])
+            ("X11LIB" variable (:default-value ("/usr/X11R6/lib")) nil [154 178])
+            ("INCS" variable (:default-value ("-I." "-I/usr/include" "-I${X11INC}")) nil [199 237])
+            ("LIBS" variable (:default-value ("-L/usr/lib" "-lc" "-L${X11LIB}" "-lX11")) nil [237 277])
+            ("CPPFLAGS" variable (:default-value ("-DVERSION=\\\"${VERSION}\\\"" "-D_DEFAULT_SOURCE")) nil [286 340])
+            ("CFLAGS" variable (:default-value ("-g" "-std=c99" "-pedantic" "-Wall" "-O0" "${INCS}" "${CPPFLAGS}")) nil [340 401])
+            ("LDFLAGS" variable (:default-value ("-g" "${LIBS}")) nil [460 481])
+            ("CC" variable (:default-value ("cc")) nil [605 613]))          
+      :file "config.mk"
+      :pointmax 614
+      :fsize 613
+      :lastmodtime '(23665 34602 333229 872000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155a0d166860"
+      :major-mode c-mode
+      :tags 
+        '( ("gettemperature" function
+               (:pointer 1
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99 110])
+                    ("sensor" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [111 124]))                  
+                :type "char")
+                nil [77 257]))          
+      :file "dwmstatus-temperature.c"
+      :pointmax 259
+      :fsize 259
+      :lastmodtime '(23665 34602 333229 872000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155a0d166880"
+      :major-mode c-mode
+      :tags 
+        '( ("_BSD_SOURCE" variable (:constant-flag t) nil [50 61])
+            ("_BSD_SOURCE" variable (:constant-flag t) nil [50 61])
+            ("unistd.h" include (:system-flag t) nil [62 81])
+            ("stdio.h" include (:system-flag t) nil [82 100])
+            ("stdlib.h" include (:system-flag t) nil [101 120])
+            ("stdarg.h" include (:system-flag t) nil [121 140])
+            ("string.h" include (:system-flag t) nil [141 160])
+            ("strings.h" include (:system-flag t) nil [161 181])
+            ("sys/time.h" include (:system-flag t) nil [182 203])
+            ("time.h" include (:system-flag t) nil [204 221])
+            ("sys/types.h" include (:system-flag t) nil [222 244])
+            ("sys/wait.h" include (:system-flag t) nil [245 266])
+            ("X11/Xlib.h" include (:system-flag t) nil [268 289])
+            ("tzargentina" variable
+               (:pointer 1
+                :default-value "\"America/Buenos_Aires\""
+                :type "char")
+                nil [291 334])
+            ("tzutc" variable
+               (:pointer 1
+                :default-value "\"UTC\""
+                :type "char")
+                nil [335 355])
+            ("tzberlin" variable
+               (:pointer 1
+                :default-value "\"Europe/Berlin\""
+                :type "char")
+                nil [356 389])
+            ("dpy" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Display" type (:type "class") nil nil))
+                nil [391 411])
+            ("smprintf" function
+               (:pointer 1
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [429 439])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [440 444]))                  
+                :type "char")
+                nil [413 744])
+            ("settz" function
+               (:arguments 
+                  ( ("tzname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [757 770]))                  
+                :type "void")
+                nil [746 800])
+            ("mktimes" function
+               (:pointer 1
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [817 827])
+                    ("tzname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [828 841]))                  
+                :type "char")
+                nil [802 1143])
+            ("setstatus" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1160 1170]))                  
+                :type "void")
+                nil [1145 1241])
+            ("loadavg" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1258 1263]))                  
+                :type "char")
+                nil [1243 1402])
+            ("readfile" function
+               (:pointer 1
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1420 1431])
+                    ("file" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1432 1443]))                  
+                :type "char")
+                nil [1404 1730])
+            ("getbattery" function
+               (:pointer 1
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1750 1761]))                  
+                :type "char")
+                nil [1732 2675])
+            ("gettemperature" function
+               (:pointer 1
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2699 2710])
+                    ("sensor" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2711 2724]))                  
+                :type "char")
+                nil [2677 2857])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2868 2873]))                  
+                :type "int")
+                nil [2859 3921]))          
+      :file "dwmstatus.c"
+      :pointmax 3923
+      :fsize 3923
+      :lastmodtime '(23665 34602 333229 872000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_BSD_SOURCE")
+          )
+)
+    (semanticdb-table "semanticdb-table-155a0d1668a0"
+      :major-mode c-mode
+      :tags 
+        '( ("readfile" function
+               (:pointer 1
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17 28])
+                    ("file" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29 40]))                  
+                :type "char")
+                nil [1 367])
+            ("getbattery" function
+               (:pointer 1
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [387 398]))                  
+                :type "char")
+                nil [369 866]))          
+      :file "new-acpi-battery.c"
+      :pointmax 868
+      :fsize 867
+      :lastmodtime '(23665 34602 333229 872000)
+      :unmatched-syntax nil))
+  :file "!home!jtarchalski!suckless!dwmstatus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

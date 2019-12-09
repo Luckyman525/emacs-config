@@ -1,0 +1,178 @@
+;; Object semanticdb-project-database-file-15596bba13b0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15596bba13b0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15596bba13cc"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [695 714])
+            ("stdbool.h" include (:system-flag t) nil [715 735])
+            ("avr/io.h" include (:system-flag t) nil [736 755])
+            ("wait.h" include nil nil [756 773])
+            ("action_layer.h" include nil nil [774 799])
+            ("print.h" include nil nil [800 818])
+            ("debug.h" include nil nil [819 837])
+            ("util.h" include nil nil [838 855])
+            ("matrix.h" include nil nil [856 875])
+            ("debounce.h" include nil nil [876 897])
+            ("DEBOUNCE" variable (:constant-flag t) nil [1462 1470])
+            ("raw_matrix" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("matrix_row_t" type (:type "class") nil nil))
+                nil [1513 1557])
+            ("matrix" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("matrix_row_t" type (:type "class") nil nil))
+                nil [1573 1613])
+            ("read_cols" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("row" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1670 1682]))                  
+                :type ("matrix_row_t" type (:type "class") nil nil))
+                nil [1640 1683])
+            ("init_cols" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1714 1719]))                  
+                :type "void")
+                nil [1684 1720])
+            ("unselect_rows" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1755 1760]))                  
+                :type "void")
+                nil [1721 1761])
+            ("select_row" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("row" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1793 1805]))                  
+                :type "void")
+                nil [1762 1806])
+            ("mcp23018_reset_loop" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1808 1843])
+            ("matrix_init_user" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2018 2023]))                  
+                :type "void")
+                nil [1996 2026])
+            ("matrix_scan_user" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2072 2077]))                  
+                :type "void")
+                nil [2050 2080])
+            ("matrix_init_kb" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2124 2129]))                  
+                :type "void")
+                nil [2104 2153])
+            ("matrix_scan_kb" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2197 2202]))                  
+                :type "void")
+                nil [2177 2226])
+            ("matrix_rows" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2255 2260]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2228 2284])
+            ("matrix_cols" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2313 2318]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2286 2342])
+            ("matrix_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2361 2366]))                  
+                :type "void")
+                nil [2344 2767])
+            ("matrix_power_up" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2790 2795]))                  
+                :type "void")
+                nil [2769 3085])
+            ("store_raw_matrix_row" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("index" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3194 3208]))                  
+                :type "bool")
+                nil [3154 3354])
+            ("matrix_scan" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3376 3381]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3356 4934])
+            ("matrix_is_modified" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4960 4965]))                  
+                :type "bool")
+                nil [4936 5025])
+            ("matrix_is_on" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("row" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5052 5064])
+                    ("col" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5065 5077]))                  
+                :type "bool")
+                nil [5027 5130])
+            ("matrix_get_row" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("row" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5167 5179]))                  
+                :type ("matrix_row_t" type (:type "class") nil nil))
+                nil [5132 5203])
+            ("matrix_print" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5223 5228]))                  
+                :type "void")
+                nil [5205 5415])
+            ("matrix_key_count" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5442 5447]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5417 5572])
+            ("init_cols" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5778 5783]))                  
+                :type "void")
+                nil [5756 6058])
+            ("read_cols" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("row" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6090 6102]))                  
+                :type ("matrix_row_t" type (:type "class") nil nil))
+                nil [6060 7054])
+            ("unselect_rows" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7278 7283]))                  
+                :type "void")
+                nil [7252 7703])
+            ("select_row" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("row" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7728 7740]))                  
+                :type "void")
+                nil [7705 9017]))          
+      :file "matrix.c"
+      :pointmax 9018
+      :fsize 9017
+      :lastmodtime '(23804 5153 536571 433000)
+      :unmatched-syntax '((symbol 907 . 921) (symbol 899 . 906) (punctuation 898 . 899))
+      :lexical-table 
+        '(("DEBOUNCE" . ((number "5" 1471 . 1472)))
+          )
+))
+  :file "!home!jtarchalski!keebs!qmk_firmware!keyboards!ergodox_ez!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+h=df -h | awk '{ if ($6 == "/home") print $4 }'
+
+echo "$h"

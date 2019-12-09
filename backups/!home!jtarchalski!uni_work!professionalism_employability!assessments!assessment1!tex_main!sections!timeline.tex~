@@ -1,0 +1,43 @@
+\documentclass[../main.tex]{subfile}
+
+\begin{document}
+\begin{center}
+
+\begin{tikzpicture}
+  % nodes
+  \node[rotate=270, yshift=0.5cm, xshift=-3.5cm] (first) {Don't fail first year of university};
+  \node[rotate=270, xshift=-1.5cm, yshift=-0.3cm] (first_note) [left=of first, below=of first] {at least 60\% in every module};
+  \node[rotate=270, yshift=1.5cm, xshift=3.6cm] (sec) {Don't fail second year of university};
+  \node[rotate=270, xshift=-1.5cm, yshift=-0.3cm] (sec_note) [left=of sec, below=of sec] {at least 70\% in every module};
+  \node[rotate=270, yshift=2.5cm, xshift=-3.5cm] (placement) {Cybersecurity focused placement};
+  \node[rotate=270, yshift=3.5cm, xshift=4.3cm] (final) {Graduate university with first class honors};
+  \node[rotate=270, xshift=-1.5cm, yshift=-0.3cm] (final_note) [left=of final, below=of final] {at least 70\% in every module};
+  \node[rotate=270, yshift=4cm, xshift=-4cm] (grad_job) {Cybersecurity graduate job (pen testing)};
+  \node[yshift=-3cm, xshift=10.5cm] (sat) {Am I content with my job?};
+  \node[yshift=-0.1cm, xshift=-2cm] (con1) [below=of sat] {am I doing the work I want to be doing?};
+  \node[xshift=3cm] (con2) [above=of sat] {am I earning as much as I want to be?};
+  \node[yshift=4cm, xshift =11cm] (house) {Buy my own house};
+  
+  
+  % lines from timeline
+  \draw[thick,->] (0,0) -- (15,0) node[anchor=west] {time (years)};
+  \foreach \x in {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
+    \draw (\x cm,1pt) -- (\x cm, -1pt) node[anchor=north] {$\x$};
+  \draw[thick] (0.5,0) -- (first) ;
+  \draw[thick] (1.5,0) -- (sec);
+  \draw[thick] (2.5,0) -- (placement);
+  \draw[thick] (3.5,0) -- (final);
+  \draw[thick] (4,0) -- (grad_job);
+  \draw[thick] (7,0) -- (sat);
+  \draw[thick] (11,0) -- (house);
+
+  % note lines
+  \draw (first) -- (first_note);
+  \draw (sec) -- (sec_note);
+  \draw (final) -- (final_note);
+  \draw (sat) -- (con1);
+  \draw (sat) -- (con2);
+\end{tikzpicture}
+
+\end{center}  
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[../main.tex]{subfile}
+
+\begin{document}
+%\flushleft
+Feedback given by Nick Stevenson from Unisys (nick.stevenson@unisys.com) \\
+\begin{itemize}
+\item \textbf{Feedback I used:}\\
+  \begin{itemize}
+    \item Place education section before work experience \\
+      Justification: I don't have experience in the field I am applying for, so education is more important \\
+
+    \item Add university to education section \\
+      Justification: Tells whoever reads my CV that I am currently studying a course in the field that I am applying for \\
+
+    \item Add modules from university to education section \\
+      Justification: Modules from my course provide slightly more granular information about what knowledge an employer can expect me to have \\
+  \end{itemize}
+\item \textbf{Feedback I did not use:} \\
+  \begin{itemize}
+    \item Anything relevant outside of university \\
+      Justification: I think that this should be used in my cover letter to demonstrate skills and attributes that the employer is looking for \\
+
+    \item Modules from A-levels \\
+      Justification: A-Levels are not relevant to the field I am applying in, so they can consist of only the subject and grade \\
+  \end{itemize}
+\end{itemize}
+\end{document}

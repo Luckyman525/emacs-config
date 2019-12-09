@@ -1,0 +1,4 @@
+(defvar usb-drive-letter (substring data-directory 0 3))
+(defvar usb-home-dir (concat usb-drive-letter "_emacs_dir/"))
+
+(setenv "HOME" usb-home-dir)

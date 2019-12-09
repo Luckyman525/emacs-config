@@ -1,0 +1,4 @@
+/sudo:root@localhost:/boot/refind_linux.conf
+/tmp/#!sudo:root@localhost:!boot!refind_linux.conf#
+/sudo:root@localhost:/etc/mkinitcpio.conf
+/tmp/#!sudo:root@localhost:!etc!mkinitcpio.conf#

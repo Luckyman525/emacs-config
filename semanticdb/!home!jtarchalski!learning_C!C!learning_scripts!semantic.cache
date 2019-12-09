@@ -1,0 +1,241 @@
+;; Object semanticdb-project-database-file-157e5b563818
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157e5b563818"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157e5aec9ab8"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("IN_WORD" variable (:constant-flag t) nil [29 36])
+            ("OUT_WORD" variable (:constant-flag t) nil [47 55])
+            ("MAX_WORD" variable (:constant-flag t) nil [66 74])
+            ("main" function (:type "int") nil [128 935]))          
+      :file "1-13.c"
+      :pointmax 936
+      :fsize 935
+      :lastmodtime '(23680 13623 239936 716000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IN_WORD" . ((number "1" 37 . 38)))
+          ("MAX_WORD" . ((number "15" 75 . 77)))
+          ("OUT_WORD" . ((number "0" 56 . 57)))
+          )
+)
+    (semanticdb-table "semanticdb-table-157e5b05f6c4"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("MAXLINE" variable (:constant-flag t) nil [28 35])
+            ("cgetline" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("line" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85 97])
+                    ("maxline" variable (:type "int") (reparse-symbol arg-sub-list) [98 110]))                  
+                :type "int")
+                nil [72 111])
+            ("copy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("to" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [122 132])
+                    ("from" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [133 145]))                  
+                :type "void")
+                nil [112 146])
+            ("main" function (:type "int") nil [207 649])
+            ("cgetline" function
+               (:arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [714 723])
+                    ("lim" variable (:type "int") (reparse-symbol arg-sub-list) [724 732]))                  
+                :type "int")
+                nil [701 895])
+            ("copy" function
+               (:arguments 
+                  ( ("to" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [969 979])
+                    ("from" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [980 992]))                  
+                :type "void")
+                nil [959 1060]))          
+      :file "1-17.c"
+      :pointmax 1061
+      :fsize 1060
+      :lastmodtime '(23673 23476 266408 61000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAXLINE" . ((number "1000" 36 . 40)))
+          )
+)
+    (semanticdb-table "semanticdb-table-157e5b1f0280"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("MAXLINE" variable (:constant-flag t) nil [28 35])
+            ("cgetline" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("line" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85 97])
+                    ("maxline" variable (:type "int") (reparse-symbol arg-sub-list) [98 110]))                  
+                :type "int")
+                nil [72 111])
+            ("copy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("to" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [122 132])
+                    ("from" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [133 145]))                  
+                :type "void")
+                nil [112 146])
+            ("main" function (:type "int") nil [179 593])
+            ("cgetline" function
+               (:arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [658 667])
+                    ("lim" variable (:type "int") (reparse-symbol arg-sub-list) [668 676]))                  
+                :type "int")
+                nil [645 951])
+            ("i" variable (:type "int") nil [947 948])
+            ("i" variable (:type "int") nil [1052 1058])
+            ("i" variable
+               (:default-value "0"
+                :type "int")
+                nil [1062 1068])
+            ("i" variable (:type "int") nil [1111 1113]))          
+      :file "1-18.c"
+      :pointmax 1116
+      :fsize 1115
+      :lastmodtime '(23673 23055 316412 544000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAXLINE" . ((number "1000" 36 . 40)))
+          )
+)
+    (semanticdb-table "semanticdb-table-157e5b1f0244"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("MAXLINE" variable (:constant-flag t) nil [28 35])
+            ("reverse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55 64]))                  
+                :type "void")
+                nil [42 65])
+            ("line" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75 84])
+                    ("maxlen" variable (:type "int") (reparse-symbol arg-sub-list) [85 96]))                  
+                :type "int")
+                nil [66 97])
+            ("main" function (:type "int") nil [136 230])
+            ("line" function
+               (:arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [241 250])
+                    ("maxlen" variable (:type "int") (reparse-symbol arg-sub-list) [251 262]))                  
+                :type "int")
+                nil [232 412])
+            ("reverse" function
+               (:arguments 
+                  ( ("s" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [471 480]))                  
+                :type "void")
+                nil [458 715]))          
+      :file "1-19.c"
+      :pointmax 716
+      :fsize 715
+      :lastmodtime '(23682 30875 929820 263000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAXLINE" . ((number "1000" 36 . 40)))
+          )
+)
+    (semanticdb-table "semanticdb-table-157e5b1f0b68"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("TAB" variable (:constant-flag t) nil [30 33])
+            ("main" function (:type "int") nil [38 219]))          
+      :file "1-20.c"
+      :pointmax 220
+      :fsize 219
+      :lastmodtime '(23682 32192 763139 107000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TAB" . ((number "4" 34 . 35)))
+          )
+)
+    (semanticdb-table "semanticdb-table-157e5b27d864"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [48 295]))          
+      :file "tab_blank_new-count.c"
+      :pointmax 296
+      :fsize 295
+      :lastmodtime '(23561 33082 103237 283000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-157e5b2f9590"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [21 398]))          
+      :file "bkspc_tab_bkslsh-replace.c"
+      :pointmax 399
+      :fsize 398
+      :lastmodtime '(23562 26179 453260 231000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-157e5b4e20e0"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("TAB" variable (:constant-flag t) nil [30 33])
+            ("main" function (:type "int") nil [38 397]))          
+      :file "entab.c"
+      :pointmax 398
+      :fsize 397
+      :lastmodtime '(23727 54217 403277 143000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TAB" . ((number "4" 34 . 35)))
+          )
+))
+  :file "!home!jtarchalski!learning_C!C!learning_scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

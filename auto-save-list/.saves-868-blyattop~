@@ -1,0 +1,4 @@
+/sudo:root@localhost:/efi/EFI/refind/refind.conf
+/tmp/#!sudo:root@localhost:!efi!EFI!refind!refind.conf#
+/efi/EF()
+/efi/#EF()#

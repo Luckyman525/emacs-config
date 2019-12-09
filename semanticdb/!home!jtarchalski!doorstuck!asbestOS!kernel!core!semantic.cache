@@ -1,0 +1,267 @@
+;; Object semanticdb-project-database-file-158fa870bed4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-158fa870bed4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-158fa870a50c"
+      :major-mode c-mode
+      :tags 
+        '( ("magenta/magenta.h" include (:system-flag t) nil [1 29])
+            ("magenta/memory.h" include (:system-flag t) nil [30 57])
+            ("magenta/vfs.h" include (:system-flag t) nil [58 82])
+            ("magenta/init.h" include (:system-flag t) nil [83 108])
+            ("platform/console.h" include (:system-flag t) nil [109 138])
+            ("platform/io.h" include (:system-flag t) nil [139 163])
+            ("stdlib.h" include (:system-flag t) nil [164 183])
+            ("string.h" include (:system-flag t) nil [184 203])
+            ("stdio.h" include (:system-flag t) nil [204 222])
+            ("cursor_x" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [224 260])
+            ("cursor_y" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [261 297])
+            ("term_width" variable
+               (:typemodifiers ("static")
+                :default-value "80"
+                :type "int")
+                nil [298 326])
+            ("term_height" variable
+               (:typemodifiers ("static")
+                :default-value "25"
+                :type "int")
+                nil [327 355])
+            ("parsing_escape_code" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [356 392])
+            ("foreground_colour" variable
+               (:typemodifiers ("static")
+                :type ("term_colour" type (:type "enum") nil nil))
+                nil [393 435])
+            ("background_colour" variable
+               (:typemodifiers ("static")
+                :type ("term_colour" type (:type "enum") nil nil))
+                nil [436 478])
+            ("term_mode" variable
+               (:typemodifiers ("static")
+                :default-value "TERM_MODE_TERMINAL"
+                :type ("term_mode" type (:type "enum") nil nil))
+                nil [479 532])
+            ("terminal_initialise" function
+               (:arguments 
+                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [559 565])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [566 572]))                  
+                :type "void")
+                nil [534 831])
+            ("terminal_move_cursor" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [859 865])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [866 872]))                  
+                :type "void")
+                nil [833 952])
+            ("terminal_clear" function (:type "void") nil [954 1120])
+            ("terminal_set_mode" function
+               (:arguments 
+                  ( ("mode" variable (:type ("term_mode" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [1145 1165]))                  
+                :type "void")
+                nil [1122 1239])
+            ("terminal_putchar" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1263 1270]))                  
+                :type "void")
+                nil [1241 3368])
+            ("terminal_set_colour" function
+               (:arguments 
+                  ( ("fg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3395 3415])
+                    ("bg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3416 3436]))                  
+                :type "void")
+                nil [3370 3496])
+            ("terminal_make_colour" function
+               (:arguments 
+                  ( ("fg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3527 3547])
+                    ("bg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3548 3568]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3498 3621])
+            ("terminal_set_cell" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [3646 3653])
+                    ("attr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3654 3667])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3668 3674])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3675 3681]))                  
+                :type "void")
+                nil [3623 3730])
+            ("terminal_write" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3752 3769]))                  
+                :type "void")
+                nil [3732 3867])
+            ("terminal_size" function
+               (:arguments 
+                  ( ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3888 3899])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3900 3912]))                  
+                :type "void")
+                nil [3869 4024])
+            ("terminal_set_size" function
+               (:arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [4049 4059])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [4060 4071]))                  
+                :type "void")
+                nil [4026 4197]))          
+      :file "terminal.c"
+      :pointmax 4199
+      :fsize 4198
+      :lastmodtime '(23657 47836 326615 417000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-158fa859a230"
+      :major-mode c-mode
+      :tags 
+        '( ("magenta/textui.h" include (:system-flag t) nil [1 28])
+            ("stdarg.h" include (:system-flag t) nil [29 48])
+            ("stdio.h" include (:system-flag t) nil [49 67])
+            ("string.h" include (:system-flag t) nil [68 87])
+            ("textui_start_screen" function
+               (:arguments 
+                  ( ("fg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [114 134])
+                    ("bg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [135 155]))                  
+                :type "void")
+                nil [89 214])
+            ("textui_screen_title" function
+               (:arguments 
+                  ( ("title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [241 259]))                  
+                :type "void")
+                nil [216 441])
+            ("textui_screen_footer" function
+               (:arguments 
+                  ( ("fg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [469 489])
+                    ("bg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [490 510])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [537 554]))                  
+                :type "void")
+                nil [443 921])
+            ("textui_screen_create_list" function
+               (:arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("textui_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [954 976]))                  
+                :type "void")
+                nil [923 1052])
+            ("textui_write_line" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1077 1083])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1084 1090])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1091 1110])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1111 1115]))                  
+                :type "void")
+                nil [1054 1310])
+            ("textui_write_list_item" function
+               (:arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("textui_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1340 1362])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1363 1382])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1383 1387]))                  
+                :type "void")
+                nil [1312 1650])
+            ("textui_draw_hline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1682 1689])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1690 1696])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1697 1703])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1704 1713])
+                    ("attr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1744 1763]))                  
+                :type "void")
+                nil [1652 1856])
+            ("textui_draw_vline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [1888 1895])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1896 1902])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1903 1909])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1910 1919])
+                    ("attr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1950 1969]))                  
+                :type "void")
+                nil [1858 2063])
+            ("textui_fill_rect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2094 2100])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2101 2107])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [2108 2114])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [2115 2121])
+                    ("attr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [2122 2141]))                  
+                :type "void")
+                nil [2065 2297])
+            ("textui_start_dialog" function
+               (:arguments 
+                  ( ("fg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2324 2344])
+                    ("bg" variable (:type ("term_colour" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2345 2365]))                  
+                :type "void")
+                nil [2299 2947])
+            ("textui_dialog_title" function
+               (:arguments 
+                  ( ("title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2974 2992]))                  
+                :type "void")
+                nil [2949 3401])
+            ("textui_dialog_create_list" function
+               (:arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("textui_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3434 3456]))                  
+                :type "void")
+                nil [3403 3699]))          
+      :file "textui.c"
+      :pointmax 3700
+      :fsize 3699
+      :lastmodtime '(23657 47836 326615 417000)
+      :unmatched-syntax nil))
+  :file "!home!jtarchalski!doorstuck!asbestOS!kernel!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

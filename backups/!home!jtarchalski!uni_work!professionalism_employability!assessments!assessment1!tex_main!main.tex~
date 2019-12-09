@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={7in, 10.5in}]{geometry}
+\usepackage{pdfpages}
+\usepackage{subfiles}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning}
+
+\title{Employment Portfolio}
+\author{Jakub Tarchaslki}
+
+\begin{document}
+
+\ttfamily
+
+\begin{titlepage}
+ \maketitle  
+\end{titlepage}
+
+\flushleft
+
+\section{CV Feedback}
+\subfile{sections/cv_feedback}
+
+\section{Improved CV}
+CV with improvements from the feedback I was given can be found on the next two pages
+\includepdf[ pages={1,2} ]{sections/cv.pdf}
+
+\section{Skills Audit}
+\subfile{sections/skills_audit}
+
+\section{Ideal Job}
+\subfile{sections/ideal_job}
+\includepdf[ pages={1,2} ]{sections/ideal_job.pdf}
+
+\section{Cover Letter}
+\subfile{sections/cover_letter}
+
+\section{Timeline}
+\subfile{sections/timeline}
+
+\section{Action Plan}
+\subfile{sections/action_plan}
+\end{document}

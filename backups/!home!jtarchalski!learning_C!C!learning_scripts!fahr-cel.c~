@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+/* a simple program which prints a table of Fahrenheit to Celsius */
+
+main()	{
+  float fahr, celsius;        		/* declare fahrenheit and clesius as floating points */
+  int lower, upper, step;        	/* declare lower, upper, and step, as integers */
+  char f[11] = "Fahrenheit";
+  char c[8] = "Celsius";
+
+  
+  lower = 0;        			/* set the "lower" variable to -200 */
+  upper = 300;        			/* set the "upper" variable to 100 */
+  step = 20;       			/* set the steps to go up in to 20 */
+
+  printf("%10s %10s\n", f, c);
+  fahr = lower;       			/* set initial value of "fahr" to "lower" */
+  while (fahr <= upper) {        	/* initiate while loop to run while "fahr" is less than or equal to "upper" */
+    celsius = (5.0/9.0) * (fahr-32.0);        /* C = (5/9) * (F-32) */
+    printf("%10.2f %10.2f\n", fahr, celsius);	/* print the output in a table structure with "fahr" in the 1st collumn and "celsius" in the second */
+    fahr = fahr + step;			/* set a new value of "fahr" by adding "step" to the previous value of "fahr" */ /* end of loop */
+  }
+}

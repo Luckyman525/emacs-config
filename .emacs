@@ -8,11 +8,11 @@
  '(c-default-style "bsd")
  '(custom-enabled-themes '(abyss))
  '(custom-safe-themes
-   '("994508ac1b9cfc317c80dcffb1efb69689e792eab8bc4c1dd0be7a57b77c4706" default "abyss"))
+   '("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "994508ac1b9cfc317c80dcffb1efb69689e792eab8bc4c1dd0be7a57b77c4706" default "abyss"))
  '(doc-view-continuous t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(ws-butler yasnippet-snippets yasnippet project-explorer function-args helm-gtags helm ## ecb clear-text mingus elcord quelpa-use-package cider clojure-mode projectile better-defaults))
+   '(smart-mode-line-powerline-theme smart-mode-line elpy python-mode marcopolo helm-tramp dockerfile-mode docker-compose-mode docker-cli docker-api docker quelpa ws-butler yasnippet-snippets yasnippet project-explorer function-args helm-gtags helm ## ecb clear-text mingus quelpa-use-package cider clojure-mode projectile better-defaults))
  '(speedbar-default-position 'left)
  '(speedbar-directory-unshown-regexp "^\\(CVS\\|RCS\\|SCCS\\|STAR\\|\\.\\.*$\\)\\'")
  '(speedbar-ignored-directory-expressions
@@ -28,8 +28,20 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(mode-line ((t (:background "#d9d15a" :foreground "#010101" :box nil)))))
 
+(setq powerline-default-separator-dir '(left . right))
+(setq sml/theme 'powerline)
+(sml/setup)
+
+
+(defun set-background-for-terminal (&optional frame)
+  (or frame (setq frame (selected-frame)))
+  "unsets the background color in terminal mode"
+  (unless (display-graphic-p frame)
+    (set-face-background 'default "unspecified-bg" frame)))
+(add-hook 'after-make-frame-functions 'set-background-for-terminal)
+(add-hook 'window-setup-hook 'set-background-for-terminal)
 
 
 (defun er-sudo-edit (&optional arg)
@@ -48,7 +60,8 @@ buffer is not visiting a file."
 (global-set-key (kbd "C-x C-r") #'er-sudo-edit)
 
 
-(add-to-list 'load-path "/home/jtarchalski/.emacs/plugins/")
+(add-to-list 'load-path "/home/jtarchalski/.emacs.d/plugins/")
+(add-to-list 'load-path "/home/jtarchalski/.emacs.d/plugins/eaf/")
 (let ((default-directory  "/home/jtarchalski/.emacs.d/plugins/"))
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
@@ -56,8 +69,8 @@ buffer is not visiting a file."
         (convert-standard-filename "plugins/"))
 
 
-(add-to-list 'default-frame-alist '(font . "Hack-12"))
-(set-face-attribute 'default t :font "Hack-12")
+(add-to-list 'default-frame-alist '(font . "Mononoki-12"))
+(set-face-attribute 'default t :font "Mononoki-12")
 ;(custom-safe-themes 'abyss t)
 ;(custom-enabled-themes 'abyss t)
 (load-theme 'abyss)
@@ -81,8 +94,8 @@ There are two things you can do about this warning:
 1. Install an Emacs version that does support SSL and be safe.
 2. Remove this warning from your init file so you won't see it again."))
   ;; Comment/uncomment these two lines to enable/disable MELPA and MELPA Stable as desired
-  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
-  ;;(add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
+  ;;(add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
+  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     ;; For important compatibility libraries like cl-lib
     (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")))))
@@ -97,6 +110,8 @@ There are two things you can do about this warning:
   (unless (package-installed-p p)
     (package-install p)))
 
+
+(require 'eaf)
 
 
 ;(load "~/.emacs.d/libmpdee.el")
@@ -198,6 +213,9 @@ There are two things you can do about this warning:
                                (call-interactively 'compile)))
 
 
+(add-hook 'c-mode-common-hook   'hs-minor-mode)
+
+
 ;; Package: yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -214,9 +232,21 @@ There are two things you can do about this warning:
 (global-set-key "\C-cb" 'org-switchb)
 
 
-(require 'elcord)
-(elcord-mode)
+;; Clojure thing
+;; (defun spit-scad-last-expression ()
+;;   (interactive)
+;;   (cider-interactive-eval
+;;    (format
+;; 	"(require 'scad-clj.scad)
+;; 	   (spit \"repl.scad\"
+;; 		     (scad-clj.scad/write-scad %s))"
+;; 	cider-last-sexp)))
+
+;; (define-key cider-mode-map
+;;   (kbd "C-c 3") 'spit-scad-last-expression)
+
 
 (message nil)
+
 
 (message-or-box ".emacs loaded succesfully")

@@ -1,0 +1,76 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+PS1="[\W] "
+PATH=~/.local/lib/python3.7/site-packages:/usr/lib/surfraw:${PATH}
+PATH=~/.config/dwm/scripts:${PATH}
+
+export EDITOR="emacsclient -c"
+export WWW="firefox"
+
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+export PATH="${HOME}"/opt/npm/bin:${PATH}
+
+alias ls='ls --color=auto'
+alias l='ls -lh'
+alias la='ls -alh'
+alias DIE='rm -rf /'
+#alias 'syssleep'='systemctl suspend'
+alias 'emacs'='emacsclient -c'
+
+# Programs
+alias 'openboardview'='cd ~/OpenBoardView && ./openboardview.sh'
+
+# Games
+alias 'csgo'='~/Games/csgo.sh'
+alias 'bbt'='~/Games/csgo.sh'
+
+# neovim aliases
+alias 'vim'='nvim'
+alias 'vi'='nvim'
+
+# teensy loader/qmk
+alias 'teensy_3.2_load'='sudo teensy_loader_cli -mmcu=mk20dx256 -wv'
+
+# WiFi
+alias 'wifistart'='~/utils/internet/wifi_start.sh'
+alias 'wifiadd'='~/utils/internet/wifi_add.sh'
+alias 'wifistop'='~/utils/internet/wifi_stop.sh'
+
+# GUI
+alias 'wmstart'='~/utils/ui/start-ui.sh'
+alias 'wmstop'='killall Xorg'
+
+# Pacman Aliases
+alias 'pacin'='sudo pacman -S'
+alias 'pacsn'='sudo pacman -Syy'
+alias 'pacup'='sudo pacman -Syyu'
+alias 'pacrm'='sudo pacman -Rss'
+alias 'pacls'='sudo pacman -Qq'
+alias 'grepac'='sudo pacman -Ss'
+alias 'pacstg'='sudo pacman -Syyuw'
+alias 'pacdck'='sudo pacman -Dkk'
+
+# AUR Stuff
+aurls() {
+	list=$(aur repo -d aur -l | awk '{print $1}')
+	printf "$list"
+}
+
+aurin() {
+	package="$1"
+	aur sync -cgT $(printf "$package")
+	pacsn && pacin $(printf "$package")
+}
+
+alias 'aurup'='aur sync -cguT --ignore-file=/home/aur/ignore && pacup'
+
+
+eval "$(thefuck --alias fuck)"

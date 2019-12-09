@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+/* print a histogram of the frequencies of different types of characters */
+
+void print_bar(int length) {			/* void function for printing a bar */
+    for (int i = 0; i < length; i++) {
+        putc('=', stdout);
+    }
+}
+
+int main() {
+  int c, t, n, ch, state;
+
+  t = n = ch = 0;
+  while ((c = getchar()) != EOF)  {	/* while loop for user input. Breaks when user inputs 'EOF'. */
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))  {	/* */
+      ++ch;
+    }
+    else if (c == '\n'){
+      ++n;
+    }
+    else if (c == '\t')
+      ++t;
+  }
+
+  printf("\nHorizontal Histogram:\n\n");
+  printf(" Character     | Histogram\n");
+  printf(" Alpha-numeric | ");
+  print_bar(ch);
+  
+  printf("\n Newlines      | ");
+  print_bar(n);
+
+  printf("\n Tabs          | ");
+  print_bar(t);
+  printf("\n");
+}

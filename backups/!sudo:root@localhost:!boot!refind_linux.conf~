@@ -1,0 +1,4 @@
+"Boot with standard options"  "root=UUID=3b00ea50-dac1-41c5-bc44-b073d8533fda resume=UUID=ca7eb14c-c4a7-4d11-84f8-f75fa27a31e7 rw quiet nvidia-drm.modeset=1 initrd=boot/initramfs-linux-rt-lts.img"
+"Boot without nvidia drm modesetting"  "root=UUID=3b00ea50-dac1-41c5-bc44-b073d8533fda rw quiet nvidia-drm.modeset=0"
+"Boot to single-user mode"    "root=UUID=3b00ea50-dac1-41c5-bc44-b073d8533fda rw quiet single"
+"Boot with minimal options"   "ro root=UUID=3b00ea50-dac1-41c5-bc44-b073d8533fda"

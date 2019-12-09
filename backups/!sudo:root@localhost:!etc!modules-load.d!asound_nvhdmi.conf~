@@ -1,0 +1,2 @@
+# Load snd_hda_codec_hdmi modules for hdmi audio
+snd_hda_codec_hdmi

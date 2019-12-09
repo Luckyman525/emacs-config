@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+float fahrcel(float m);
+
+#define LOWER 0
+#define UPPER 200
+
+/* function version of temperature conversion program from section 1.2 */
+
+main()
+{
+  float f;
+
+  printf("Fahrenheit | Celsius\n");
+  for (f = LOWER; f <= UPPER; f = f + 20)
+    printf("%10.2f | %7.2f\n", f, fahrcel(f));
+  return 0;
+}
+
+/* celfahr: returns temprutre in fahrenheit */
+float  fahrcel(float F)
+{
+  /* F = C(9 / 5) + 32 */
+  /* C = (5/9)(F-32) */
+  
+  float C;
+
+  C = 5 * (F - 32) / 9;
+
+  return C; 
+} 

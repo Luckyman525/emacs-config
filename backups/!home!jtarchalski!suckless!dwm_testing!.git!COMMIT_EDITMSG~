@@ -1,0 +1,27 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is ahead of 'origin/master' by 7 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   config.h
+#	modified:   dwm.c
+#	renamed:    patches/tbd/dwm-alternativetags-6.2.diff -> patches/applied/dwm-alternativetags-6.2.diff
+#	modified:   patches/patchlist
+#
+# Untracked files:
+#	config.h.orig
+#	config.h.rej
+#	config.mk.bak
+#	config.mk.rej
+#	drw.c.orig
+#	drw.o
+#	dwm
+#	dwm.c.orig
+#	dwm.c.rej
+#	dwm.o
+#	util.o
+#

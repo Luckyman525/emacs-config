@@ -1,0 +1,16 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 34 and 64 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# Changes to be committed:
+#	modified:   keyboards/pancake/keymaps/default/keymap.c
+#	modified:   keyboards/pancake/readme.md
+#
+# Untracked files:
+#	keyboards/arm_handwire/
+#

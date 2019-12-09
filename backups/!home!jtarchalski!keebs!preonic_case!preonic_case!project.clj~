@@ -1,0 +1,9 @@
+(defproject preonic_case "0.1.0-SNAPSHOT"
+  :description "Case for my handwired 5x12 ortho."
+  :url "http://example.com/FIXME"
+  :main preonic-case.case
+  :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
+            :url "https://www.eclipse.org/legal/epl-2.0/"}
+  :dependencies [[org.clojure/clojure "1.7.0"]
+                 [unicode-math "0.2.0"]
+                 [scad-clj "0.4.0"]])

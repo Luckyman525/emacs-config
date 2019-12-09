@@ -1,0 +1,21 @@
+- time to generate all possible wps pins is from 20 to 30 seconds on a powerfull computer using the crunch utility
+- the output file takes up 941MB of disk space
+
+- command and output :
+  $ time crunch 1 8 0123456789 -o all_wps_pins
+  	Crunch will now generate the following amount of data: 987654320 bytes
+  	941 MB
+  	0 GB
+  	0 TB
+  	0 PB
+  	Crunch will now generate the following number of lines: 111111110
+
+  	crunch:  49% completed generating output
+
+  	crunch:  99% completed generating output
+
+  	crunch: 100% completed generating output
+
+  	real    0m23.013s
+  	user    0m17.175s
+  	sys     0m1.618s
