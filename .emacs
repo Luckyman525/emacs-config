@@ -12,7 +12,7 @@
  '(doc-view-continuous t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(smart-mode-line-powerline-theme smart-mode-line elpy python-mode marcopolo helm-tramp dockerfile-mode docker-compose-mode docker-cli docker-api docker quelpa ws-butler yasnippet-snippets yasnippet project-explorer function-args helm-gtags helm ## ecb clear-text mingus quelpa-use-package cider clojure-mode projectile better-defaults))
+   '(cider-eval-sexp-fu smart-mode-line-powerline-theme smart-mode-line elpy python-mode marcopolo helm-tramp dockerfile-mode docker-compose-mode docker-cli docker-api docker quelpa ws-butler yasnippet-snippets yasnippet project-explorer function-args helm-gtags helm ## ecb clear-text mingus quelpa-use-package cider clojure-mode projectile better-defaults))
  '(speedbar-default-position 'left)
  '(speedbar-directory-unshown-regexp "^\\(CVS\\|RCS\\|SCCS\\|STAR\\|\\.\\.*$\\)\\'")
  '(speedbar-ignored-directory-expressions
@@ -94,8 +94,8 @@ There are two things you can do about this warning:
 1. Install an Emacs version that does support SSL and be safe.
 2. Remove this warning from your init file so you won't see it again."))
   ;; Comment/uncomment these two lines to enable/disable MELPA and MELPA Stable as desired
-  ;;(add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
-  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
+  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
+  ;;(add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     ;; For important compatibility libraries like cl-lib
     (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")))))
@@ -233,17 +233,22 @@ There are two things you can do about this warning:
 
 
 ;; Clojure thing
-;; (defun spit-scad-last-expression ()
-;;   (interactive)
-;;   (cider-interactive-eval
-;;    (format
-;; 	"(require 'scad-clj.scad)
-;; 	   (spit \"repl.scad\"
-;; 		     (scad-clj.scad/write-scad %s))"
-;; 	cider-last-sexp)))
+(defun spit-scad-last-expression ()
+  (interactive)
+  (cider-interactive-eval
+   (format
+	"(require 'scad-clj.scad)
+	  (spit \"repl.scad\" (scad-clj.scad/write-scad %s))"
+	(cider-last-sexp))))
+(eval-after-load 'Clojure
+  '(define-key cider-mode-map (kbd "C-c 3") 'spit-scad-last-expression))
 
-;; (define-key cider-mode-map
-;;   (kbd "C-c 3") 'spit-scad-last-expression)
+
+;; arduino-mode
+(require 'cl)
+(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
+(add-to-list 'auto-mode-alist '("\.ino$" . arduino-mode))
+
 
 
 (message nil)
